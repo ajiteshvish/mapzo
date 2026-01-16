@@ -62,7 +62,7 @@ export function Footer() {
               {/* Mapzo AI Logo */}
               <div className="mb-6">
                 <img
-                  src="/logo.png"
+                  src="/image.png"
                   alt="Mapzo AI"
                   className="h-8 w-auto hover:opacity-90 transition-opacity"
                   loading="lazy"

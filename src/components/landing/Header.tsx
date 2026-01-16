@@ -176,7 +176,7 @@ export function Header() {
             {/* Logo */}
             <a href="/" className="flex items-center gap-3">
               <img
-                src="/logo.png"
+                src="/image.png"
                 alt="Mapzo AI"
                 className="h-10 w-auto hover:opacity-90 transition-opacity"
                 loading="eager"
