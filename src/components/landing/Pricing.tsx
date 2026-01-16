@@ -160,7 +160,7 @@ export function Pricing() {
                     </td>
                     <td className="px-6 py-4 text-center">
                       <Button variant="hero" size="sm" asChild>
-                        <a href="https://login.saralone.com/">Get Started</a>
+                        <a href="https://login.mapzo.ai/">Get Started</a>
                       </Button>
                     </td>
                   </tr>
@@ -218,7 +218,7 @@ export function Pricing() {
                     </td>
                     <td className="px-6 py-4 text-center">
                       <Button variant="hero" size="sm" asChild>
-                        <a href="https://login.saralone.com/">Get Started</a>
+                        <a href="https://login.mapzo.ai/">Get Started</a>
                       </Button>
                     </td>
                   </tr>
@@ -276,7 +276,7 @@ export function Pricing() {
                     </td>
                     <td className="px-6 py-4 text-center">
                       <Button variant="hero" size="sm" asChild>
-                        <a href="https://login.saralone.com/">Get Started</a>
+                        <a href="https://login.mapzo.ai/">Get Started</a>
                       </Button>
                     </td>
                   </tr>
@@ -320,7 +320,7 @@ export function Pricing() {
                     <div className="text-3xl font-bold text-green-600">{model.commission}</div>
                   </div>
                   <Button variant="heroOutline" size="sm" className="w-full" asChild>
-                    <a href="https://login.saralone.com/">Apply Now</a>
+                    <a href="https://login.mapzo.ai/">Apply Now</a>
                   </Button>
                 </div>
               </motion.div>
@@ -348,11 +348,11 @@ export function Pricing() {
               Ready to grow your business with AI?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Join thousands of businesses and agencies already using SARALONE to automate their local SEO and grow their online presence.
+              Join thousands of businesses and agencies already using Mapzo AI to automate their local SEO and grow their online presence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://login.saralone.com/">Start Free Trial</a>
+                <a href="https://login.mapzo.ai/">Start Free Trial</a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform">Book Demo</a>

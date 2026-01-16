@@ -66,7 +66,7 @@ export function Reviews() {
           >
             <div className="card-soft p-8 hover-lift">
               <h3 className="text-2xl font-semibold text-foreground mb-8">
-                Why SARALONE reviews work
+                Why Mapzo AI reviews work
               </h3>
 
               <div className="space-y-8">
@@ -101,7 +101,7 @@ export function Reviews() {
               className="p-8 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl border border-green-200"
             >
               <p className="text-muted-foreground leading-relaxed">
-                <span className="text-green-700 font-semibold">📈 Result:</span> Businesses using SARALONE
+                <span className="text-green-700 font-semibold">📈 Result:</span> Businesses using Mapzo AI
                 see an average 40% increase in review response rates and improved local rankings within 30 days.
               </p>
             </motion.div>

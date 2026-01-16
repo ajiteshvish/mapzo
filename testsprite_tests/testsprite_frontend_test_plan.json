@@ -1,0 +1,490 @@
+[
+  {
+    "id": "TC001",
+    "title": "Landing Page Sections Load Correctly",
+    "description": "Verify that all landing page sections (Hero, Pain Points, How It Works, Audit Score, One-Click Setup, Reviews Management, Post Scheduler, Website Builder, Pricing, Testimonials, Security, Support, FAQ, Final CTA, and Footer) load and display correct content aligned with brand messaging.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that Hero section with animated dashboard and CTAs is visible with correct content"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify Pain Points section displays all expected customer problem cards"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify How It Works section shows step-by-step process clearly"
+      },
+      {
+        "type": "assertion",
+        "description": "Audit Score section displays SEO audit score and analytics dashboard"
+      },
+      {
+        "type": "assertion",
+        "description": "One-Click Setup section displays automation features properly"
+      },
+      {
+        "type": "assertion",
+        "description": "Reviews Management section shows review dashboard and functionality showcase"
+      },
+      {
+        "type": "assertion",
+        "description": "Post Scheduler section displays social media scheduling features"
+      },
+      {
+        "type": "assertion",
+        "description": "Website Builder section presents builder UI and SEO features"
+      },
+      {
+        "type": "assertion",
+        "description": "Pricing section shows all pricing plans with feature comparisons"
+      },
+      {
+        "type": "assertion",
+        "description": "Testimonials section loads customer testimonials correctly"
+      },
+      {
+        "type": "assertion",
+        "description": "Security section displays trust and security elements"
+      },
+      {
+        "type": "assertion",
+        "description": "Support section presents contact information and support options"
+      },
+      {
+        "type": "assertion",
+        "description": "FAQ section expands and collapses questions using accordion interface"
+      },
+      {
+        "type": "assertion",
+        "description": "Final CTA section shows conversion CTAs correctly"
+      },
+      {
+        "type": "assertion",
+        "description": "Footer displays links, social media icons, and company info"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Header Navigation Responsiveness and Functionality",
+    "description": "Verify the responsive header navigation menu functions properly on desktop, tablet, and mobile devices including dropdown menus, search modal, and hamburger menu.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the site on desktop resolution"
+      },
+      {
+        "type": "assertion",
+        "description": "Header navigation menu and dropdown menus are visible and interactive"
+      },
+      {
+        "type": "action",
+        "description": "Click each dropdown menu and verify options are accessible"
+      },
+      {
+        "type": "action",
+        "description": "Open search modal via navigation icon and verify search input is focusable and usable"
+      },
+      {
+        "type": "action",
+        "description": "Resize viewport to tablet size"
+      },
+      {
+        "type": "assertion",
+        "description": "Header navigation adjusts layout appropriately, dropdowns function correctly"
+      },
+      {
+        "type": "action",
+        "description": "Resize viewport to mobile size"
+      },
+      {
+        "type": "assertion",
+        "description": "Hamburger menu icon appears, clicking it opens the mobile menu with all navigation options"
+      },
+      {
+        "type": "action",
+        "description": "Use the mobile menu to navigate to subpages or perform searches"
+      },
+      {
+        "type": "assertion",
+        "description": "Navigation selections correctly route user and search works on mobile"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Animated Dashboard Performance in Hero Section",
+    "description": "Verify that the animated dashboard preview in the hero section animates smoothly without lag or performance issues across supported browsers and device types.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "assertion",
+        "description": "Animated dashboard preview loads automatically and animations play smoothly"
+      },
+      {
+        "type": "assertion",
+        "description": "No UI glitches or freezes occur during animation looping"
+      },
+      {
+        "type": "action",
+        "description": "Test animation on Chrome, Firefox, Safari, and Edge browsers"
+      },
+      {
+        "type": "assertion",
+        "description": "Animation performs consistently across all browsers"
+      },
+      {
+        "type": "action",
+        "description": "Load site on desktop and mobile devices"
+      },
+      {
+        "type": "assertion",
+        "description": "Animation plays smoothly without impacting page responsiveness or causing high CPU usage"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "AI Chatbot Interaction",
+    "description": "Ensure the AI chatbot interface opens correctly, accepts user inputs, and provides relevant and helpful responses dynamically.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to homepage or any page with chatbot enabled"
+      },
+      {
+        "type": "action",
+        "description": "Click chatbot trigger button to open chatbot interface"
+      },
+      {
+        "type": "assertion",
+        "description": "Chatbot interface opens and is ready to receive inputs"
+      },
+      {
+        "type": "action",
+        "description": "Type a common query related to Saral One services into chatbot input and send"
+      },
+      {
+        "type": "assertion",
+        "description": "Chatbot responds with accurate and helpful answer within reasonable time"
+      },
+      {
+        "type": "action",
+        "description": "Type an uncommon or invalid query"
+      },
+      {
+        "type": "assertion",
+        "description": "Chatbot provides a relevant fallback or politely requests clarification"
+      },
+      {
+        "type": "action",
+        "description": "Close and reopen the chatbot interface multiple times"
+      },
+      {
+        "type": "assertion",
+        "description": "Chatbot maintains session state or resets cleanly without errors"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "SEO Meta Tags and Structured Data Verification",
+    "description": "Validate the presence and correctness of SEO meta tags, Open Graph tags, Twitter Cards, and JSON-LD structured data on the homepage as per SEO best practices.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load the homepage in a browser"
+      },
+      {
+        "type": "action",
+        "description": "View page source or use browser developer tools to inspect head tags"
+      },
+      {
+        "type": "assertion",
+        "description": "Meta tags for title, description, viewport, and keywords are present and accurate"
+      },
+      {
+        "type": "assertion",
+        "description": "Open Graph tags (og:title, og:description, og:image, og:url) are correct"
+      },
+      {
+        "type": "assertion",
+        "description": "Twitter Card meta tags are present for sharing preview"
+      },
+      {
+        "type": "action",
+        "description": "Use a structured data testing tool to validate JSON-LD schema data"
+      },
+      {
+        "type": "assertion",
+        "description": "Structured data is error-free and matches Saral One branding and content"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Keyboard Navigation for Page Sections",
+    "description": "Verify that keyboard navigation features allow users to navigate through page sections using arrow keys and vim-style shortcuts efficiently.",
+    "category": "accessibility",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Focus on the main page content"
+      },
+      {
+        "type": "action",
+        "description": "Press arrow down and arrow up keys to navigate between page sections"
+      },
+      {
+        "type": "assertion",
+        "description": "Focus shifts sequentially in the expected order across all major sections"
+      },
+      {
+        "type": "action",
+        "description": "Use vim-style shortcuts (e.g., 'j' and 'k') if implemented to navigate up and down"
+      },
+      {
+        "type": "assertion",
+        "description": "Page sections scroll and focus changes accordingly"
+      },
+      {
+        "type": "action",
+        "description": "Validate that keyboard navigation works on all supported browsers"
+      },
+      {
+        "type": "assertion",
+        "description": "No keyboard traps or unexpected behavior occurs during navigation"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Scroll Progress Indicator Functionality",
+    "description": "Verify that the scroll progress indicator bar at the top of the page accurately reflects the user's scroll position and updates in real time.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load the homepage and verify scroll progress indicator is visible at top"
+      },
+      {
+        "type": "action",
+        "description": "Scroll down slowly from top to bottom"
+      },
+      {
+        "type": "assertion",
+        "description": "Scroll progress indicator width or fill increases proportionally with page scroll position"
+      },
+      {
+        "type": "action",
+        "description": "Scroll back up to top"
+      },
+      {
+        "type": "assertion",
+        "description": "Scroll progress indicator resets appropriately to zero or minimal fill"
+      },
+      {
+        "type": "action",
+        "description": "Test the indicator on different screen sizes"
+      },
+      {
+        "type": "assertion",
+        "description": "Indicator remains visible, functional, and visually correct across devices"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Floating Action Button Interactions",
+    "description": "Ensure floating action buttons on the site respond consistently to user interactions and execute their intended quick actions without errors.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load homepage and identify all floating action buttons"
+      },
+      {
+        "type": "action",
+        "description": "Hover and click floating action buttons"
+      },
+      {
+        "type": "assertion",
+        "description": "Buttons show hover states and execute correct associated actions"
+      },
+      {
+        "type": "action",
+        "description": "Press associated keyboard keys to trigger buttons if supported"
+      },
+      {
+        "type": "assertion",
+        "description": "Buttons respond to keyboard controls and maintain accessibility"
+      },
+      {
+        "type": "action",
+        "description": "Test multiple quick clicks and verify no glitches or crashes occur"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Accessibility Compliance for Keyboard and Screen Reader",
+    "description": "Verify that the website meets accessibility standards including keyboard usability and screen reader compatibility across all interactive and informational content.",
+    "category": "accessibility",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate through the website using only the keyboard (tab, shift+tab, enter, space)"
+      },
+      {
+        "type": "assertion",
+        "description": "All interactive elements are reachable and operable via keyboard"
+      },
+      {
+        "type": "action",
+        "description": "Use a screen reader to navigate the homepage"
+      },
+      {
+        "type": "assertion",
+        "description": "All meaningful content and UI elements have appropriate ARIA roles and labels"
+      },
+      {
+        "type": "assertion",
+        "description": "No missing or duplicated labels, and content order is logical and understandable"
+      },
+      {
+        "type": "action",
+        "description": "Check color contrast ratios on text and UI elements"
+      },
+      {
+        "type": "assertion",
+        "description": "Contrast meets WCAG minimum standards for readability"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Responsive Design across Devices",
+    "description": "Verify the mobile-first responsive design maintains usability and visual integrity across a variety of devices including phones, tablets, and desktops in various orientations.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the website on phones of various resolutions"
+      },
+      {
+        "type": "assertion",
+        "description": "Site layout adapts correctly: text scales, images and components resize or rearrange properly"
+      },
+      {
+        "type": "action",
+        "description": "Open on tablets and verify layout and interactive elements render correctly"
+      },
+      {
+        "type": "action",
+        "description": "Open on desktop browsers and verify full site layout and interactive features"
+      },
+      {
+        "type": "action",
+        "description": "Rotate devices to landscape and portrait modes"
+      },
+      {
+        "type": "assertion",
+        "description": "Site reflows and remains fully accessible and visually consistent"
+      },
+      {
+        "type": "action",
+        "description": "Test commonly used browsers on all device types"
+      },
+      {
+        "type": "assertion",
+        "description": "No rendering bugs or usability issues observed"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "404 Not Found Page Redirect and Display",
+    "description": "Verify that unmatched routes redirect users to a custom 404 page that presents user-friendly messaging and navigation options.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to a non-existent URL path in the site"
+      },
+      {
+        "type": "assertion",
+        "description": "User is redirected to the 404 Not Found page"
+      },
+      {
+        "type": "assertion",
+        "description": "404 page displays clear messaging that page is not found"
+      },
+      {
+        "type": "assertion",
+        "description": "404 page provides navigation links or buttons back to homepage or other main sections"
+      },
+      {
+        "type": "action",
+        "description": "Click navigation options on the 404 page"
+      },
+      {
+        "type": "assertion",
+        "description": "Navigation functions correctly and user is routed properly"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Consultation Booking CTA Functionality",
+    "description": "Ensure all prominent consultation booking call-to-action buttons redirect correctly to the booking interface and track user engagement metrics.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Identify all consultation booking CTA buttons on the homepage and relevant sections"
+      },
+      {
+        "type": "action",
+        "description": "Click each consultation booking CTA button"
+      },
+      {
+        "type": "assertion",
+        "description": "User is redirected to the correct booking or contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Booking interface loads completely and allows user to proceed"
+      },
+      {
+        "type": "action",
+        "description": "Monitor tracking events or analytics to verify that CTA clicks are logged"
+      }
+    ]
+  }
+]

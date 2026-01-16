@@ -41,38 +41,38 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>SARALONE - AI Local SEO Manager | Rank Higher Automatically</title>
+        <title>Mapzo AI - AI Local SEO Manager | Rank Higher Automatically</title>
         <meta
           name="description"
-          content="SARALONE is an AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website. Start ranking higher today with our comprehensive local SEO automation platform."
+          content="Mapzo AI is an AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website. Start ranking higher today with our comprehensive local SEO automation platform."
         />
         <meta name="keywords" content="local SEO, AI SEO, Google Business Profile, local rankings, review management, SEO automation, local search optimization, Google My Business, local SEO tools, automated SEO" />
-        <link rel="canonical" href="https://saralone.com" />
+        <link rel="canonical" href="https://mapzo.ai" />
 
         {/* Favicon and Icons */}
-        <link rel="icon" type="image/x-icon" href="/site.ico" />
-        <link rel="shortcut icon" href="/site.ico" />
-        <link rel="apple-touch-icon" href="/site.ico" />
-        <meta property="og:image" content="https://saralone.com/site.ico" />
-        <meta name="twitter:image" content="https://saralone.com/site.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta property="og:image" content="https://mapzo.ai/site.png" />
+        <meta name="twitter:image" content="https://mapzo.ai/site.png" />
 
         {/* Enhanced Open Graph */}
-        <meta property="og:title" content="SARALONE - AI Local SEO Manager | Rank Higher Automatically" />
+        <meta property="og:title" content="Mapzo AI - AI Local SEO Manager | Rank Higher Automatically" />
         <meta property="og:description" content="AI-powered Local SEO that helps you rank higher, automatically. Manage your Google Business Profile, reviews, posts, and website with intelligent automation." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://saralone.com" />
-        <meta property="og:site_name" content="SARALONE" />
+        <meta property="og:url" content="https://mapzo.ai" />
+        <meta property="og:site_name" content="Mapzo AI" />
         <meta property="og:locale" content="en_US" />
 
         {/* Enhanced Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SARALONE - AI Local SEO Manager | Rank Higher Automatically" />
+        <meta name="twitter:title" content="Mapzo AI - AI Local SEO Manager | Rank Higher Automatically" />
         <meta name="twitter:description" content="AI-powered Local SEO that helps you rank higher, automatically. Comprehensive local SEO automation platform." />
-        <meta name="twitter:site" content="@saralone" />
+        <meta name="twitter:site" content="@mapzoai" />
 
         {/* Additional SEO Meta Tags */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="author" content="SARALONE" />
+        <meta name="author" content="Mapzo AI" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
@@ -83,13 +83,13 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "SARALONE",
-            "url": "https://saralone.com",
+            "name": "Mapzo AI",
+            "url": "https://mapzo.ai",
             "description": "AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website.",
             "foundingDate": "2024",
             "sameAs": [
-              "https://twitter.com/saralone",
-              "https://linkedin.com/company/saralone"
+              "https://twitter.com/mapzoai",
+              "https://linkedin.com/company/mapzoai"
             ]
           })}
         </script>
@@ -99,12 +99,12 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "SARALONE",
-            "url": "https://saralone.com",
+            "name": "Mapzo AI",
+            "url": "https://mapzo.ai",
             "description": "AI Local SEO Manager | Rank Higher Automatically",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://saralone.com/search?q={search_term_string}",
+              "target": "https://mapzo.ai/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })}
@@ -115,11 +115,11 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "name": "SARALONE",
+            "name": "Mapzo AI",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
             "description": "AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website.",
-            "url": "https://saralone.com",
+            "url": "https://mapzo.ai",
             "offers": {
               "@type": "Offer",
               "price": "0",

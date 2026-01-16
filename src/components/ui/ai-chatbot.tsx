@@ -17,27 +17,27 @@ interface ChatbotProps {
 
 const predefinedResponses = {
     greeting: [
-        "Hi there! I'm SARA, your AI assistant. I'm here to help you learn about SARALONE's local SEO services. What would you like to know?",
-        "Hello! Welcome to SARALONE. I can help you understand how our AI-powered local SEO platform works. What questions do you have?",
-        "Hey! I'm SARA, and I'm excited to help you discover how SARALONE can boost your local search rankings. What can I help you with today?"
+        "Hi there! I'm SARA, your AI assistant. I'm here to help you learn about Mapzo AI's local SEO services. What would you like to know?",
+        "Hello! Welcome to Mapzo AI. I can help you understand how our AI-powered local SEO platform works. What questions do you have?",
+        "Hey! I'm SARA, and I'm excited to help you discover how Mapzo AI can boost your local search rankings. What can I help you with today?"
     ],
     pricing: [
-        "SARALONE offers comprehensive plans for different needs:\n\n🇮🇳 **India Business Owner Plans:**\n• Business Owner Premium - ₹10,000/GMB (Done-For-You)\n• Business Owner - ₹6,000/GMB (Self-Serve SaaS)\n\n🌍 **Global Business Owner Plans:**\n• Business Owner - $199/GMB (Done-For-You)\n• Premium Business Owner - $129/GMB (Self-Serve SaaS)\n\n🏢 **Agency Plans (India):**\n• Agency Starter - ₹24,000 (20 GMB)\n• Agency Growth - ₹36,000 (50 GMB)\n• Agency Scale - ₹60,000 (100 GMB)\n\n💰 **Special Referral Models:**\n• Non-Commitment: 20% commission\n• Commitment (₹1L): 35% commission\n• High Commitment (₹3L): 50% commission\n\nAll plans include 20% referral rewards. Which plan interests you most?"
+        "Mapzo AI offers comprehensive plans for different needs:\n\n🇮🇳 **India Business Owner Plans:**\n• Business Owner Premium - ₹10,000/GMB (Done-For-You)\n• Business Owner - ₹6,000/GMB (Self-Serve SaaS)\n\n🌍 **Global Business Owner Plans:**\n• Business Owner - $199/GMB (Done-For-You)\n• Premium Business Owner - $129/GMB (Self-Serve SaaS)\n\n🏢 **Agency Plans (India):**\n• Agency Starter - ₹24,000 (20 GMB)\n• Agency Growth - ₹36,000 (50 GMB)\n• Agency Scale - ₹60,000 (100 GMB)\n\n💰 **Special Referral Models:**\n• Non-Commitment: 20% commission\n• Commitment (₹1L): 35% commission\n• High Commitment (₹3L): 50% commission\n\nAll plans include 20% referral rewards. Which plan interests you most?"
     ],
     features: [
-        "SARALONE's AI handles your complete local SEO automatically:\n\n🎯 **Google Business Profile Optimization**\n• Automatic profile updates\n• Keyword optimization\n• Photo management\n\n⭐ **Review Management**\n• AI-generated authentic responses\n• Review monitoring\n• Sentiment analysis\n\n📱 **Content & Social Media**\n• Automated post scheduling\n• Seasonal content creation\n• Multi-platform publishing\n\n📊 **SEO Analytics**\n• Real-time ranking tracking\n• Traffic analysis\n• Competitor insights\n\nWhat specific feature interests you most?"
+        "Mapzo AI's AI handles your complete local SEO automatically:\n\n🎯 **Google Business Profile Optimization**\n• Automatic profile updates\n• Keyword optimization\n• Photo management\n\n⭐ **Review Management**\n• AI-generated authentic responses\n• Review monitoring\n• Sentiment analysis\n\n📱 **Content & Social Media**\n• Automated post scheduling\n• Seasonal content creation\n• Multi-platform publishing\n\n📊 **SEO Analytics**\n• Real-time ranking tracking\n• Traffic analysis\n• Competitor insights\n\nWhat specific feature interests you most?"
     ],
     howItWorks: [
-        "Getting started with SARALONE is super simple:\n\n1️⃣ **Connect Your Accounts** (2 minutes)\n• Link your Google Business Profile\n• Connect social media accounts\n• Add your website\n\n2️⃣ **AI Analysis** (24 hours)\n• Our AI analyzes your business\n• Identifies optimization opportunities\n• Creates your custom strategy\n\n3️⃣ **Automatic Optimization** (Ongoing)\n• AI handles daily tasks\n• Monitors and improves rankings\n• Responds to reviews\n• Posts engaging content\n\nNo technical knowledge required! Want to see a demo?"
+        "Getting started with Mapzo AI is super simple:\n\n1️⃣ **Connect Your Accounts** (2 minutes)\n• Link your Google Business Profile\n• Connect social media accounts\n• Add your website\n\n2️⃣ **AI Analysis** (24 hours)\n• Our AI analyzes your business\n• Identifies optimization opportunities\n• Creates your custom strategy\n\n3️⃣ **Automatic Optimization** (Ongoing)\n• AI handles daily tasks\n• Monitors and improves rankings\n• Responds to reviews\n• Posts engaging content\n\nNo technical knowledge required! Want to see a demo?"
     ],
     reviews: [
         "Our AI review management is pretty amazing:\n\n✨ **Authentic Responses**\n• Sounds like you, not a robot\n• Personalized to each review\n• Maintains your brand voice\n\n⚡ **Lightning Fast**\n• Responds within minutes\n• 24/7 monitoring\n• Never misses a review\n\n📈 **Proven Results**\n• 40% increase in response rates\n• Improved local rankings\n• Better customer relationships\n\nBusinesses see ranking improvements within 30 days. Would you like to see some examples?"
     ],
     support: [
-        "We've got your back with multiple support options:\n\n💬 **Live Chat** - Available 24/7\n📧 **Email Support** - support@saralone.com\n📞 **Phone Support** - For Professional & Enterprise plans\n📚 **Knowledge Base** - Comprehensive guides\n🎥 **Video Tutorials** - Step-by-step walkthroughs\n\nOur average response time is under 2 hours. Plus, our AI handles most of the work automatically, so you'll rarely need support!\n\nNeed help with something specific?"
+        "We've got your back with multiple support options:\n\n💬 **Live Chat** - Available 24/7\n📧 **Email Support** - support@mapzo.ai\n📞 **Phone Support** - For Professional & Enterprise plans\n📚 **Knowledge Base** - Comprehensive guides\n🎥 **Video Tutorials** - Step-by-step walkthroughs\n\nOur average response time is under 2 hours. Plus, our AI handles most of the work automatically, so you'll rarely need support!\n\nNeed help with something specific?"
     ],
     demo: [
-        "I'd love to show you SARALONE in action! Here's what you can do:\n\n📞 **Book a Personal Demo**\n• One-on-one walkthrough with our experts\n• Customized to your business needs\n• Q&A with our team\n• See real results from actual businesses\n\n🆓 **Start Free Trial**\n• No credit card required\n• Full access to all features\n• 14 days to explore everything\n\nReady to book your demo? Click here: https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform"
+        "I'd love to show you Mapzo AI in action! Here's what you can do:\n\n📞 **Book a Personal Demo**\n• One-on-one walkthrough with our experts\n• Customized to your business needs\n• Q&A with our team\n• See real results from actual businesses\n\n🆓 **Start Free Trial**\n• No credit card required\n• Full access to all features\n• 14 days to explore everything\n\nReady to book your demo? Click here: https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform"
     ]
 };
 
@@ -135,10 +135,10 @@ export function AIChatbot({ isOpen, onClose }: ChatbotProps) {
 
         // Default responses for unmatched queries
         const defaultResponses = [
-            "That's a great question! Let me help you with that. SARALONE is an AI-powered local SEO platform that automatically optimizes your Google Business Profile, manages reviews, and improves your local search rankings. What specific aspect would you like to know more about?",
-            "I'd be happy to help! SARALONE uses AI to handle all your local SEO tasks automatically - from optimizing your Google Business Profile to responding to reviews and creating content. Would you like to know about our features, pricing, or see a demo?",
-            "Thanks for asking! SARALONE makes local SEO effortless by automating everything - profile optimization, review management, content creation, and ranking improvements. What would you like to explore first?",
-            "Great question! I can tell you about SARALONE's features, pricing plans, how it works, or show you a demo. What interests you most?"
+            "That's a great question! Let me help you with that. Mapzo AI is an AI-powered local SEO platform that automatically optimizes your Google Business Profile, manages reviews, and improves your local search rankings. What specific aspect would you like to know more about?",
+            "I'd be happy to help! Mapzo AI uses AI to handle all your local SEO tasks automatically - from optimizing your Google Business Profile to responding to reviews and creating content. Would you like to know about our features, pricing, or see a demo?",
+            "Thanks for asking! Mapzo AI makes local SEO effortless by automating everything - profile optimization, review management, content creation, and ranking improvements. What would you like to explore first?",
+            "Great question! I can tell you about Mapzo AI's features, pricing plans, how it works, or show you a demo. What interests you most?"
         ];
 
         return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
@@ -321,7 +321,7 @@ export function AIChatbot({ isOpen, onClose }: ChatbotProps) {
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
                             onKeyDown={handleKeyPress}
-                            placeholder="Ask me anything about SARALONE..."
+                            placeholder="Ask me anything about Mapzo AI..."
                             className="w-full px-3 py-2 sm:px-4 sm:py-3 pr-10 sm:pr-12 border border-gray-200 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-soft-blue/20 focus:border-soft-blue text-xs sm:text-sm"
                             rows={1}
                             style={{ minHeight: '40px', maxHeight: '80px' }}
@@ -336,7 +336,7 @@ export function AIChatbot({ isOpen, onClose }: ChatbotProps) {
                     </div>
                 </div>
                 <p className="text-xs text-gray-500 mt-2 text-center">
-                    Powered by SARALONE AI • Always learning to help you better
+                    Powered by Mapzo AI AI • Always learning to help you better
                 </p>
             </div>
         </motion.div>
@@ -403,7 +403,7 @@ export function ChatbotTrigger() {
                             <div>
                                 <p className="text-sm font-medium text-gray-900">Hi! I'm SARA 👋</p>
                                 <p className="text-xs text-gray-600 mt-1">
-                                    I can help you learn about SARALONE's AI-powered local SEO features. Ask me anything!
+                                    I can help you learn about Mapzo AI's AI-powered local SEO features. Ask me anything!
                                 </p>
                             </div>
                         </div>

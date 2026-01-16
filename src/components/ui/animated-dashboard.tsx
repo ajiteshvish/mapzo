@@ -82,7 +82,7 @@ export function AnimatedDashboard({ variant = 'analytics', className = '' }: Das
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
                 </div>
                 <div className="flex-1 bg-gray-100 rounded-lg px-4 py-2 ml-4">
-                    <span className="text-xs text-gray-500">saralone.com/dashboard</span>
+                    <span className="text-xs text-gray-500">mapzo.ai/dashboard</span>
                 </div>
             </div>
 

@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:8080",
+  "executionArgs": {
+    "projectName": "namesaas",
+    "projectPath": "/Users/ajiteshvishwakarma/Documents/SARALONE/namesaas",
+    "testIds": [],
+    "additionalInstruction": "",
+    "envs": {
+      "API_KEY": "sk-user-UGc54v3kVxdY2o7JrwZfnVZKQzTP4oO0M1YFTtUv0kluPOp7i0sNER0NFlyuVnu92cwoWBgGjvcOApPwoK8ICtCQWJUKwTYFz1NVFNDq1_0jDAbVnMkHlbpcwGMHXiKXNBI"
+    }
+  },
+  "proxy": "http://26cd65f8-d3dc-429f-9a77-2e347ec48488:jzltrtu2oxKRLPi7IaLhybsPLTJsSb5G@tun.testsprite.com:8080"
+}

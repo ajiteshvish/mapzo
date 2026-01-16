@@ -38,7 +38,7 @@ export function PostScheduler() {
               AI <span className="gradient-text">post scheduler</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-              Schedule content for months ahead. Set it once, and SARALONE keeps your
+              Schedule content for months ahead. Set it once, and Mapzo AI keeps your
               business active and engaging without any effort from you.
             </p>
 
@@ -74,7 +74,7 @@ export function PostScheduler() {
             >
               <Sparkles className="w-6 h-6 text-soft-blue" />
               <span className="text-muted-foreground font-medium">
-                "Set it once. SARALONE keeps you active."
+                "Set it once. Mapzo AI keeps you active."
               </span>
             </motion.div>
           </motion.div>

@@ -187,7 +187,7 @@ export function ReviewsDashboard({ className = '' }: ReviewsDashboardProps) {
                             className="ml-13 bg-white rounded-lg p-3 border-l-4 border-blue-500"
                         >
                             <div className="flex items-center gap-2 mb-2">
-                                <span className="text-xs font-medium text-blue-600">SARALONE AI Response</span>
+                                <span className="text-xs font-medium text-blue-600">Mapzo AI AI Response</span>
                                 {responseStatus === 'typing' && (
                                     <motion.div
                                         animate={{ opacity: [0.5, 1, 0.5] }}

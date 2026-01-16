@@ -13,7 +13,7 @@ const steps = [
   {
     icon: Brain,
     title: 'AI understands your business',
-    description: 'Tell us about your business once. SARALONE learns everything it needs.',
+    description: 'Tell us about your business once. Mapzo AI learns everything it needs.',
   },
   {
     icon: Search,
@@ -59,7 +59,7 @@ export function HowItWorks() {
           className="text-center mb-20"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
-            How <span className="gradient-text">SARALONE</span> fixes this
+            How <span className="gradient-text">Mapzo AI</span> fixes this
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             A simple, automated workflow that handles everything for you.

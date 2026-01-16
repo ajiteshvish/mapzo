@@ -24,7 +24,7 @@ export function FinalCTA() {
           </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Join thousands of businesses already growing with SARALONE.
+            Join thousands of businesses already growing with Mapzo AI.
             Start your free trial today—no credit card required.
           </p>
 
@@ -36,7 +36,7 @@ export function FinalCTA() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button variant="hero" size="xl" className="glow" asChild>
-              <a href="https://login.saralone.com/">
+              <a href="https://login.mapzo.ai/">
                 Start Free Trial
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>

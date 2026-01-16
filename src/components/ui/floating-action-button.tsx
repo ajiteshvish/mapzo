@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { Plus, Phone, Mail, Zap, X, Calendar } from 'lucide-react';
 
 const quickActions = [
-    { icon: Zap, label: 'Sign Up', href: 'https://login.saralone.com/', color: 'bg-soft-blue' },
+    { icon: Zap, label: 'Sign Up', href: 'https://login.mapzo.ai/', color: 'bg-soft-blue' },
     { icon: Calendar, label: 'Book Demo', href: 'https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform', color: 'bg-purple-500' },
     { icon: Phone, label: 'Call Us', href: 'tel:+917771880677', color: 'bg-green-500' },
-    { icon: Mail, label: 'Email', href: 'mailto:support@saralone.com', color: 'bg-orange-500' },
+    { icon: Mail, label: 'Email', href: 'mailto:support@mapzo.ai', color: 'bg-orange-500' },
 ];
 
 export function FloatingActionButton() {

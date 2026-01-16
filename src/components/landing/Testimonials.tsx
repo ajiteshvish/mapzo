@@ -6,14 +6,14 @@ const testimonials = [
     name: 'Sarah Johnson',
     role: 'Owner, The Coffee House',
     location: 'Austin, TX',
-    quote: 'SARALONE completely transformed our online presence. We went from page 3 to the top 3 in just 2 months. The AI handles everything—I just focus on making great coffee.',
+    quote: 'Mapzo AI completely transformed our online presence. We went from page 3 to the top 3 in just 2 months. The AI handles everything—I just focus on making great coffee.',
     rating: 5,
   },
   {
     name: 'Michael Chen',
     role: 'Director, Chen Dental Clinic',
     location: 'Vancouver, BC',
-    quote: 'Managing reviews used to take hours every week. Now SARALONE handles it all, and our responses actually sound better than when I wrote them myself!',
+    quote: 'Managing reviews used to take hours every week. Now Mapzo AI handles it all, and our responses actually sound better than when I wrote them myself!',
     rating: 5,
   },
   {
@@ -42,7 +42,7 @@ export function Testimonials() {
             Trusted by businesses <span className="gradient-text">worldwide</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See what our customers have to say about their experience with SARALONE.
+            See what our customers have to say about their experience with Mapzo AI.
           </p>
         </motion.div>
 

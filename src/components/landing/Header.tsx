@@ -31,7 +31,7 @@ const navItems = [
       title: 'What we do',
       description: 'We automate the local SEO tasks that eat up time and effort so every business can be and stay visible in local searches.',
       buttonText: 'Sign Up',
-      buttonHref: 'https://login.saralone.com/'
+      buttonHref: 'https://login.mapzo.ai/'
     }
   },
   {
@@ -51,7 +51,7 @@ const navItems = [
       title: 'Who we do it for',
       description: 'We speak your language whether you\'re juggling client accounts, scaling an agency, or just want your local business found.',
       buttonText: 'Sign Up',
-      buttonHref: 'https://login.saralone.com/'
+      buttonHref: 'https://login.mapzo.ai/'
     }
   },
   {
@@ -80,7 +80,7 @@ const navItems = [
       title: 'Why we do it',
       description: 'Because every local business deserves to be found by their customers.',
       buttonText: 'Sign Up',
-      buttonHref: 'https://login.saralone.com/'
+      buttonHref: 'https://login.mapzo.ai/'
     }
   },
   {
@@ -102,7 +102,7 @@ const navItems = [
       title: 'Take a test drive',
       description: 'Check your rankings, get a ready LocalBusiness schema or reply to all reviews with auto-generated answers. All for free.',
       buttonText: 'Sign Up',
-      buttonHref: 'https://login.saralone.com/'
+      buttonHref: 'https://login.mapzo.ai/'
     }
   },
   {
@@ -176,8 +176,8 @@ export function Header() {
             {/* Logo */}
             <a href="/" className="flex items-center gap-3">
               <img
-                src="/site.ico"
-                alt="SARALONE Logo"
+                src="/logo.png"
+                alt="Mapzo AI"
                 className="h-10 w-auto hover:opacity-90 transition-opacity"
                 loading="eager"
               />
@@ -219,7 +219,7 @@ export function Header() {
                 <kbd className="hidden xl:inline-flex px-2 py-1 text-xs bg-neutral-100 rounded border">⌘K</kbd>
               </Button>
               <Button variant="hero" size="default" className="shadow-soft hover-lift" asChild>
-                <a href="https://login.saralone.com/">Sign Up</a>
+                <a href="https://login.mapzo.ai/">Sign Up</a>
               </Button>
             </div>
 
@@ -294,7 +294,7 @@ export function Header() {
                       Search
                     </Button>
                     <Button variant="hero" size="lg" className="w-full shadow-soft" asChild>
-                      <a href="https://login.saralone.com/">Sign Up</a>
+                      <a href="https://login.mapzo.ai/">Sign Up</a>
                     </Button>
                   </div>
                 </nav>

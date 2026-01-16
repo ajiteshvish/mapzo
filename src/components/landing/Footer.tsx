@@ -59,11 +59,11 @@ export function Footer() {
               viewport={{ once: true }}
               className="mb-8"
             >
-              {/* SARALONE Logo */}
+              {/* Mapzo AI Logo */}
               <div className="mb-6">
                 <img
-                  src="/site.ico"
-                  alt="SARALONE Logo"
+                  src="/logo.png"
+                  alt="Mapzo AI"
                   className="h-8 w-auto hover:opacity-90 transition-opacity"
                   loading="lazy"
                 />
@@ -87,7 +87,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">Saraloneoffice@gmail.com</span>
+                  <span className="text-sm text-muted-foreground">support@mapzo.ai</span>
                 </div>
               </div>
             </motion.div>
@@ -207,7 +207,7 @@ export function Footer() {
 
           <div className="flex items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2025 SaralOne All Rights Reserved
+              © 2025 Mapzo AI All Rights Reserved
             </p>
 
             {/* WhatsApp Button */}

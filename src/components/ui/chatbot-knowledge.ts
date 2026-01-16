@@ -1,12 +1,12 @@
-// Knowledge base for the SARALONE AI Chatbot
+// Knowledge base for the Mapzo AI AI Chatbot
 export const chatbotKnowledge = {
     // Company Information
     company: {
-        name: "SARALONE",
+        name: "Mapzo AI",
         description: "AI-powered Local SEO Manager that automatically optimizes your Google Business Profile, manages reviews, and improves local search rankings",
         location: "F-1, C-09, KLIC, Bhopal, Madhya Pradesh, 462023, India",
         contact: {
-            email: "support@saralone.com",
+            email: "support@mapzo.ai",
             phone: "7771880677",
             whatsapp: "7771880677"
         }
@@ -141,8 +141,8 @@ export const chatbotKnowledge = {
     // Common Questions & Answers
     faq: {
         "How quickly will I see results?": "Most businesses see initial improvements within 2 weeks, with significant results by month 2. Our AI works 24/7 for continuous optimization.",
-        "Do I need technical knowledge?": "Not at all! SARALONE is designed to be completely automated. Just connect your accounts and our AI handles everything.",
-        "What makes SARALONE different?": "Unlike traditional SEO tools that just report data, our AI actually does the work - optimizing profiles, responding to reviews, creating content, and improving rankings automatically.",
+        "Do I need technical knowledge?": "Not at all! Mapzo AI is designed to be completely automated. Just connect your accounts and our AI handles everything.",
+        "What makes Mapzo AI different?": "Unlike traditional SEO tools that just report data, our AI actually does the work - optimizing profiles, responding to reviews, creating content, and improving rankings automatically.",
         "Can I cancel anytime?": "Yes, all plans are month-to-month with no long-term contracts. You can cancel anytime.",
         "Do you offer support?": "Yes! We offer 24/7 live chat, email support, and phone support for Professional & Enterprise plans.",
         "Is there a free trial?": "Yes, all plans come with a 14-day free trial. No credit card required to start."
@@ -204,7 +204,7 @@ export const getContextualResponse = (topic: string, userMessage: string): strin
             return `Here are the average results our customers see:\n\n📈 **90-Day Improvements:**\n• ${chatbotKnowledge.results.averageImprovements.localVisibility}\n• ${chatbotKnowledge.results.averageImprovements.profileViews}\n• ${chatbotKnowledge.results.averageImprovements.reviewResponse}\n• ${chatbotKnowledge.results.averageImprovements.websiteTraffic}\n• ${chatbotKnowledge.results.averageImprovements.phoneCalls}\n\nWant to see what's possible for your business?`;
 
         case 'industries':
-            return `SARALONE works great for many industries:\n\n${chatbotKnowledge.industries.map(industry => `• ${industry}`).join('\n')}\n\nWhat type of business do you have? I can share specific examples for your industry!`;
+            return `Mapzo AI works great for many industries:\n\n${chatbotKnowledge.industries.map(industry => `• ${industry}`).join('\n')}\n\nWhat type of business do you have? I can share specific examples for your industry!`;
 
         default:
             return null;

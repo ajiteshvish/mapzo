@@ -1,6 +1,6 @@
 {
-    "name": "SARALONE - AI Local SEO Manager",
-    "short_name": "SARALONE",
+    "name": "Mapzo AI - AI Local SEO Manager",
+    "short_name": "Mapzo AI",
     "description": "AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website.",
     "start_url": "/",
     "display": "standalone",
@@ -9,19 +9,34 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/site.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "image/x-icon"
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
         },
         {
-            "src": "/site.ico",
+            "src": "/favicon-192x192.png",
             "sizes": "192x192",
-            "type": "image/x-icon"
+            "type": "image/png",
+            "purpose": "any"
         },
         {
-            "src": "/site.ico",
+            "src": "/favicon-512x512.png",
             "sizes": "512x512",
-            "type": "image/x-icon"
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/favicon-maskable-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/favicon-maskable-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ],
     "categories": [

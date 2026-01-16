@@ -110,7 +110,7 @@ export function AuditScore() {
             >
               <p className="text-muted-foreground leading-relaxed">
                 <span className="text-soft-blue font-semibold">💡 AI Insight:</span> Your post frequency needs attention.
-                SARALONE can automatically schedule engaging posts to improve this score by 40+ points.
+                Mapzo AI can automatically schedule engaging posts to improve this score by 40+ points.
               </p>
             </motion.div>
           </motion.div>

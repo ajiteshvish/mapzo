@@ -6,7 +6,7 @@ const supportChannels = [
     icon: Mail,
     title: 'Email support',
     description: 'Get help directly from our team via email.',
-    detail: 'support@saralone.com',
+    detail: 'support@mapzo.ai',
   },
   {
     icon: LayoutDashboard,

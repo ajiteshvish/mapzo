@@ -44,7 +44,7 @@ export function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              SARALONE understands your business and manages your complete local SEO—Google Business Profile,
+              Mapzo AI understands your business and manages your complete local SEO—Google Business Profile,
               reviews, posts, and website—without any manual work.
             </p>
 
@@ -56,7 +56,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
             >
               <Button variant="hero" size="lg" className="shadow-lg hover-lift" asChild>
-                <a href="https://login.saralone.com/">Get Started</a>
+                <a href="https://login.mapzo.ai/">Get Started</a>
               </Button>
               <Button variant="heroOutline" size="lg" className="hover-lift" asChild>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform">
