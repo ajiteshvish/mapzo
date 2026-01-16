@@ -56,7 +56,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
             >
               <Button variant="hero" size="lg" className="shadow-lg hover-lift" asChild>
-                <a href="https://login.mapzo.ai/">Get Started</a>
+                <a href="https://login.mapzoai.com/">Get Started</a>
               </Button>
               <Button variant="heroOutline" size="lg" className="hover-lift" asChild>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform">

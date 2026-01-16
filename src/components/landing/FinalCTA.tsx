@@ -36,7 +36,7 @@ export function FinalCTA() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button variant="hero" size="xl" className="glow" asChild>
-              <a href="https://login.mapzo.ai/">
+              <a href="https://login.mapzoai.com/">
                 Start Free Trial
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>

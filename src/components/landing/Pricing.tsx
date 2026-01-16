@@ -180,7 +180,7 @@ export function Pricing() {
                   className={`w-full bg-gradient-to-r ${plan.color} hover:opacity-90 transition-opacity text-white`}
                   asChild
                 >
-                  <a href="https://login.mapzo.ai/">Buy Now</a>
+                  <a href="https://login.mapzoai.com/">Buy Now</a>
                 </Button>
               </div>
             </motion.div>
@@ -204,7 +204,7 @@ export function Pricing() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://login.mapzo.ai/">Start Free Trial</a>
+                <a href="https://login.mapzoai.com/">Start Free Trial</a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform">Book Demo</a>
