@@ -1,88 +1,119 @@
 import { motion } from 'framer-motion';
-import { Check, Globe, CreditCard, Star, Users, Building2 } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-// India Business Owner Plans
-const indiaBusinessPlans = [
+// Monthly and Yearly Plans
+const pricingPlans = [
   {
-    name: 'Business Owner Premium',
-    model: 'Done-For-You',
-    price: '₹10,000',
-    period: '/ GMB',
-    referral: '20% / Special Models',
-    popular: true,
+    id: 1,
+    name: 'MB Bronze',
+    period: 'Monthly',
+    price: 600,
+    priceLabel: '₹600 / Month',
+    color: 'from-pink-500 to-pink-600',
+    features: [
+      'Magic QR',
+      'Feedback Collection',
+      'Review Invites',
+      'Free Website',
+      'Connect Custom Domains',
+      'E-commerce Setting',
+      'SEO Tools',
+      'Banners',
+      'Audit Report',
+      'Performance',
+      'AI Business Description',
+      'AI Agent',
+      'Profile Optimizer',
+      'Auto Review Reply',
+      'Media / Post Publishing',
+      'Content Scheduler',
+      'Media / Post Bulk Import',
+      'AI Credits',
+      'Keyword Ranking Tracker',
+      'Citation Feature',
+      'Support',
+    ],
   },
   {
-    name: 'Business Owner',
-    model: 'Self-Serve SaaS',
-    price: '₹6,000',
-    period: '/ GMB',
-    referral: '20% / Special Models',
-    popular: false,
-  },
-];
-
-// Global Business Owner Plans
-const globalBusinessPlans = [
-  {
-    name: 'Business Owner',
-    model: 'Done-For-You',
-    price: '$199',
-    period: '/ GMB',
-    referral: '20% / Special Models',
-    popular: false,
-  },
-  {
-    name: 'Premium Business Owner',
-    model: 'Self-Serve SaaS',
-    price: '$129',
-    period: '/ GMB',
-    referral: '20% / Special Models',
-    popular: true,
-  },
-];
-
-// Agency Plans
-const agencyPlans = [
-  {
-    name: 'Agency Starter',
-    gmbAccounts: '20 GMB',
-    price: '₹24,000',
-    referral: 'Special Models',
-    popular: false,
+    id: 2,
+    name: 'MB Bronze',
+    period: 'Yearly',
+    price: 2399,
+    priceLabel: '₹2399 / Year',
+    color: 'from-pink-500 to-pink-600',
+    features: [
+      'Google My Business Profile',
+      'GMB Audit Report',
+      'Magic QR',
+      'Performance',
+      'Feedback Collection',
+      'QR Code Download',
+      'Auto Review Reply',
+      'Post Scheduler',
+      'Media Scheduler',
+      'FREE Website',
+    ],
   },
   {
-    name: 'Agency Growth',
-    gmbAccounts: '50 GMB',
-    price: '₹36,000',
-    referral: 'Flat 10%',
-    popular: true,
+    id: 3,
+    name: 'MB Silver',
+    period: 'Yearly',
+    price: 5999,
+    priceLabel: '₹5999 / Year',
+    color: 'from-blue-600 to-blue-700',
+    features: [
+      'Google My Business Profile',
+      'GMB Audit Report',
+      'Magic QR',
+      'Performance',
+      'Feedback Collection',
+      'QR Code Download',
+      'Auto Review Reply',
+      'Post Scheduler',
+      'Media Scheduler',
+      'FREE Website',
+      'Keyword Ranking',
+      'GMB Profile Optimization',
+      'AI Business Description',
+      'AI Assistant',
+      'AI Agent',
+      'Review Invites',
+      'AI Credits',
+      'Custom Domains',
+      'Bulk Import Post Schedule',
+    ],
   },
   {
-    name: 'Agency Scale',
-    gmbAccounts: '100 GMB',
-    price: '₹60,000',
-    referral: 'Flat 10%',
-    popular: false,
-  },
-];
-
-// Special Referral Models
-const referralModels = [
-  {
-    model: 'Non-Commitment',
-    commitment: '₹0',
-    commission: '20%',
-  },
-  {
-    model: 'Commitment',
-    commitment: '₹1,00,000',
-    commission: '35%',
-  },
-  {
-    model: 'High Commitment',
-    commitment: '₹3,00,000',
-    commission: '50%',
+    id: 4,
+    name: 'MB Gold',
+    period: 'Yearly',
+    price: 24000,
+    priceLabel: '₹24000 / Year',
+    color: 'from-purple-600 to-purple-700',
+    features: [
+      'Google My Business Profile',
+      'GMB Audit Report',
+      'Magic QR',
+      'Performance',
+      'Feedback Collection',
+      'QR Code Download',
+      'Auto Review Reply',
+      'Post Scheduler',
+      'Media Scheduler',
+      'FREE Website',
+      'Keyword Ranking',
+      'GMB Profile Optimization',
+      'AI Business Description',
+      'AI Assistant',
+      'AI Agent',
+      'Review Invites',
+      'AI Credits',
+      'Custom Domains',
+      'Bulk Import Post Schedule',
+      'API Access',
+      'Team Collaboration',
+    ],
   },
 ];
 
@@ -101,239 +132,60 @@ export function Pricing() {
             Plans & <span className="gradient-text">Pricing</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-            AI-powered Google Business growth platform for Businesses & Agencies
+            Choose the perfect plan for your business needs
           </p>
-
-          {/* Global Payment Badge */}
-          <div className="inline-flex items-center gap-3 glass rounded-full px-4 py-2 border border-border/50">
-            <Globe className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Available in India & Global markets</span>
-            <CreditCard className="w-4 h-4 text-muted-foreground" />
-          </div>
         </motion.div>
 
-        {/* India Business Owner Plans */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-16"
-        >
-          <div className="flex items-center gap-3 mb-8">
-            <Building2 className="w-6 h-6 text-soft-blue" />
-            <h3 className="text-2xl font-bold text-foreground">India – Business Owner Plans</h3>
-          </div>
+        {/* Pricing Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {pricingPlans.map((plan, index) => (
+            <motion.div
+              key={plan.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow flex flex-col"
+            >
+              {/* Plan Header */}
+              <div className={`bg-gradient-to-r ${plan.color} text-white p-6 text-center`}>
+                <h3 className="text-2xl font-bold mb-1">{plan.name}</h3>
+                <p className="text-sm opacity-90">({plan.period})</p>
+              </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-              <thead className="bg-gradient-to-r from-soft-blue/10 to-light-purple/10">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Plan</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Model</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Price (Yearly)</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Referral</th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-soft-blue">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                {indiaBusinessPlans.map((plan, index) => (
-                  <tr key={plan.name} className={`border-t border-gray-100 ${plan.popular ? 'bg-soft-blue/5' : ''}`}>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium text-foreground">{plan.name}</span>
-                        {plan.popular && (
-                          <span className="px-2 py-1 text-xs font-medium bg-soft-blue text-white rounded-full">
-                            Popular
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 text-muted-foreground">{plan.model}</td>
-                    <td className="px-6 py-4">
-                      <span className="text-lg font-bold text-foreground">{plan.price}</span>
-                      <span className="text-muted-foreground">{plan.period}</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-sm text-muted-foreground">20% / </span>
-                      <span className="text-sm font-medium text-orange-600">Special Models</span>
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <Button variant="hero" size="sm" asChild>
-                        <a href="https://login.mapzo.ai/">Get Started</a>
-                      </Button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </motion.div>
-
-        {/* Global Business Owner Plans */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-16"
-        >
-          <div className="flex items-center gap-3 mb-8">
-            <Globe className="w-6 h-6 text-soft-blue" />
-            <h3 className="text-2xl font-bold text-foreground">Global – Business Owner Plans</h3>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-              <thead className="bg-gradient-to-r from-soft-blue/10 to-light-purple/10">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Plan</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Model</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Price (Yearly)</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Referral</th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-soft-blue">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                {globalBusinessPlans.map((plan, index) => (
-                  <tr key={plan.name} className={`border-t border-gray-100 ${plan.popular ? 'bg-soft-blue/5' : ''}`}>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium text-foreground">{plan.name}</span>
-                        {plan.popular && (
-                          <span className="px-2 py-1 text-xs font-medium bg-soft-blue text-white rounded-full">
-                            Popular
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 text-muted-foreground">{plan.model}</td>
-                    <td className="px-6 py-4">
-                      <span className="text-lg font-bold text-foreground">{plan.price}</span>
-                      <span className="text-muted-foreground">{plan.period}</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-sm text-muted-foreground">20% / </span>
-                      <span className="text-sm font-medium text-orange-600">Special Models</span>
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <Button variant="hero" size="sm" asChild>
-                        <a href="https://login.mapzo.ai/">Get Started</a>
-                      </Button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </motion.div>
-
-        {/* Agency Plans */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-16"
-        >
-          <div className="flex items-center gap-3 mb-8">
-            <Users className="w-6 h-6 text-soft-blue" />
-            <h3 className="text-2xl font-bold text-foreground">Agency – Bulk GMB Plans (India)</h3>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-              <thead className="bg-gradient-to-r from-soft-blue/10 to-light-purple/10">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Agency Plan</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">GMB Accounts</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Price (Yearly)</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-soft-blue">Referral</th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-soft-blue">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                {agencyPlans.map((plan, index) => (
-                  <tr key={plan.name} className={`border-t border-gray-100 ${plan.popular ? 'bg-soft-blue/5' : ''}`}>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium text-foreground">{plan.name}</span>
-                        {plan.popular && (
-                          <span className="px-2 py-1 text-xs font-medium bg-soft-blue text-white rounded-full">
-                            Popular
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="font-medium text-foreground">{plan.gmbAccounts}</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-lg font-bold text-foreground">{plan.price}</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-sm font-medium text-orange-600">{plan.referral}</span>
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <Button variant="hero" size="sm" asChild>
-                        <a href="https://login.mapzo.ai/">Get Started</a>
-                      </Button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </motion.div>
-
-        {/* Special Referral Models */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-16"
-        >
-          <div className="flex items-center gap-3 mb-8">
-            <Star className="w-6 h-6 text-soft-blue" />
-            <h3 className="text-2xl font-bold text-foreground">Agency Starter – Special Referral Models</h3>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {referralModels.map((model, index) => (
-              <motion.div
-                key={model.model}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow"
-              >
-                <div className="text-center">
-                  <h4 className="text-lg font-bold text-foreground mb-4">{model.model}</h4>
-                  <div className="mb-4">
-                    <div className="text-sm text-muted-foreground mb-2">Commitment</div>
-                    <div className="text-2xl font-bold text-soft-blue">{model.commitment}</div>
-                  </div>
-                  <div className="mb-6">
-                    <div className="text-sm text-muted-foreground mb-2">Commission</div>
-                    <div className="text-3xl font-bold text-green-600">{model.commission}</div>
-                  </div>
-                  <Button variant="heroOutline" size="sm" className="w-full" asChild>
-                    <a href="https://login.mapzo.ai/">Apply Now</a>
-                  </Button>
+              {/* Pricing */}
+              <div className="p-6 text-center border-b">
+                <div className="text-3xl font-bold text-foreground">
+                  {plan.priceLabel}
                 </div>
-              </motion.div>
-            ))}
-          </div>
+              </div>
 
-          <div className="mt-8 p-4 bg-blue-50 rounded-xl border border-blue-200">
-            <p className="text-sm text-muted-foreground text-center">
-              <strong>Note:</strong> Special referral models are applicable only for the Agency Starter (20 GMB) plan.
-              All pricing is fixed. India & Global plans are separate.
-            </p>
-          </div>
-        </motion.div>
+              {/* Features List */}
+              <div className="p-6 flex-1 overflow-y-auto max-h-96">
+                <ul className="space-y-2">
+                  {plan.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-2 text-sm">
+                      <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Buy Button */}
+              <div className="p-6 pt-0">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className={`w-full bg-gradient-to-r ${plan.color} hover:opacity-90 transition-opacity text-white`}
+                  asChild
+                >
+                  <a href="https://login.mapzo.ai/">Buy Now</a>
+                </Button>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
         {/* CTA Section */}
         <motion.div
@@ -341,14 +193,14 @@ export function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center"
+          className="text-center mt-16"
         >
           <div className="bg-gradient-to-r from-soft-blue/10 to-light-purple/10 rounded-2xl p-8 border border-soft-blue/20">
             <h3 className="text-2xl font-bold text-foreground mb-4">
               Ready to grow your business with AI?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Join thousands of businesses and agencies already using Mapzo AI to automate their local SEO and grow their online presence.
+              Join thousands of businesses already using Mapzo AI to automate their local SEO and grow their online presence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>

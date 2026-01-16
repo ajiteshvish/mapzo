@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Header } from '@/components/landing/Header';
 import { Hero } from '@/components/landing/Hero';
+import { Products } from '@/components/landing/Products';
 import { PainPoints } from '@/components/landing/PainPoints';
 import { HowItWorks } from '@/components/landing/HowItWorks';
 import { AuditScore } from '@/components/landing/AuditScore';
@@ -142,6 +143,9 @@ const Index = () => {
         <ChatbotTrigger />
         <section id="hero">
           <Hero />
+        </section>
+        <section id="products">
+          <Products />
         </section>
         <section id="pain-points">
           <PainPoints />
