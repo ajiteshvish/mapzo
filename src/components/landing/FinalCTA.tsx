@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function FinalCTA() {
   return (
@@ -42,10 +43,10 @@ export function FinalCTA() {
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform">
+              <Link to="/book-demo">
                 <Calendar className="w-5 h-5 mr-2" />
                 Book Demo
-              </a>
+              </Link>
             </Button>
           </motion.div>
 
@@ -58,7 +59,7 @@ export function FinalCTA() {
             className="mt-12 flex flex-wrap gap-6 justify-center items-center text-sm text-muted-foreground"
           >
             <span>✓ No credit card required</span>
-            <span>✓ Cancel anytime</span>
+
             <span>✓ Full access during trial</span>
           </motion.div>
         </motion.div>

@@ -1,13 +1,8 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Play, Check, Star, Globe } from 'lucide-react';
-import { AnimatedDashboard } from '@/components/ui/animated-dashboard';
-
-const highlights = [
-  { icon: Check, text: 'No learning curve' },
-  { icon: Globe, text: 'Works globally' },
-  { icon: Check, text: 'Secure and compliant' },
-];
+import { Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
+// import { AnimatedDashboard } from '@/components/ui/animated-dashboard';
 
 export function Hero() {
   return (
@@ -26,27 +21,17 @@ export function Hero() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="text-center lg:text-left"
           >
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-soft-blue/20 mb-8 shadow-soft"
-            >
-              <Star className="w-4 h-4 text-soft-blue" />
-              <span className="text-sm text-muted-foreground font-medium">AI-Powered Local SEO</span>
-            </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 text-foreground">
-              AI Local SEO Manager that helps you{' '}
-              <span className="gradient-text">rank higher</span>
-              , automatically
+              Boost Your Google Ranking for just {' '}
+              <span className="gradient-text"> ₹9/day</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Mapzo AI understands your business and manages your complete local SEO—Google Business Profile,
-              reviews, posts, and website—without any manual work.
-            </p>
+              Mapzo AI is an AI-powered SaaS platform that helps local businesses grow on Google.<br/>
+Our software automates local SEO, content posting, and review management—driving more calls, more reviews, and more customers—all on autopilot.<br/>
+
+Start at just ₹9/day and see real results for your business. Book your demo today!           </p>
 
             {/* CTA Buttons */}
             <motion.div
@@ -59,28 +44,11 @@ export function Hero() {
                 <a href="https://login.mapzoai.com/">Get Started</a>
               </Button>
               <Button variant="heroOutline" size="lg" className="hover-lift" asChild>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform">
+                <Link to="/book-demo">
                   <Play className="w-5 h-5" />
                   Book Demo
-                </a>
+                </Link>
               </Button>
-            </motion.div>
-
-            {/* Highlights */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-wrap gap-8 justify-center lg:justify-start"
-            >
-              {highlights.map((item, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-soft-blue/10 flex items-center justify-center">
-                    <item.icon className="w-4 h-4 text-soft-blue" />
-                  </div>
-                  <span className="text-sm text-muted-foreground font-medium">{item.text}</span>
-                </div>
-              ))}
             </motion.div>
           </motion.div>
 
@@ -91,7 +59,12 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
             className="relative"
           >
-            <AnimatedDashboard variant="analytics" className="max-w-lg mx-auto" />
+            {/* <AnimatedDashboard variant="analytics" className="max-w-lg mx-auto" /> */}
+            <img
+              src="/hero-image-v3.jpg"
+              alt="Mapzo AI - Rank #1 on Google"
+              className=" rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-500"
+            />
           </motion.div>
         </div>
       </div>

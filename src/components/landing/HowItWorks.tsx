@@ -22,13 +22,13 @@ const steps = [
   },
   {
     icon: Wrench,
-    title: 'Fixes profile issues',
-    description: 'Automatically optimizes your Google Business Profile.',
+    title: 'Optimizes Business Profile',
+    description: 'Automatically optimizes your Google Business Profile for higher rankings.',
   },
   {
     icon: FileText,
     title: 'Writes and schedules posts',
-    description: 'Creates engaging content that drives local traffic.',
+    description: 'Creates engaging local content that drives Maps traffic.',
   },
   {
     icon: MessageSquare,
@@ -42,8 +42,8 @@ const steps = [
   },
   {
     icon: BarChart3,
-    title: 'Tracks everything',
-    description: 'Monitors rankings, traffic, and performance in real-time.',
+    title: 'Tracks Local Rankings',
+    description: 'Monitors local rankings, traffic, and performance in real-time.',
   },
 ];
 

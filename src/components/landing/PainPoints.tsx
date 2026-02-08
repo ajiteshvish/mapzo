@@ -18,12 +18,12 @@ const painPoints = [
   {
     icon: FileWarning,
     title: 'Incomplete profiles',
-    description: 'Google Business Profiles missing critical information.',
+    description: 'Google Business Profiles missing critical local SEO information.',
   },
   {
     icon: Search,
-    title: 'No keyword strategy',
-    description: 'Guessing what customers are searching for.',
+    title: 'No Local SEO strategy',
+    description: 'Guessing what local customers are searching for on Maps.',
   },
   {
     icon: CalendarX,

@@ -4,8 +4,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import ProductDetails from "./pages/ProductDetails";
+import AboutUs from "./pages/AboutUs";
+import BookDemo from "./pages/BookDemo";
+import { ScrollToHash } from "./components/ui/scroll-to-hash";
 
 const queryClient = new QueryClient();
 
@@ -16,9 +21,12 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToHash />
           <Routes>
             <Route path="/" element={<Index />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/book-demo" element={<BookDemo />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

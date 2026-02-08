@@ -14,7 +14,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://mapzo.ai/sitemap.xml
+Sitemap: https://mapzoai.com/sitemap.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1

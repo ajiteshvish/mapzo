@@ -43,8 +43,8 @@ Successfully rebranded the entire application from SARALONE to Mapzo AI, includi
 #### Domain Changes
 - `saralone.com` → `mapzo.ai`
 - `login.saralone.com` → `login.mapzo.ai`
-- `support@saralone.com` → `support@mapzo.ai`
-- `Saraloneoffice@gmail.com` → `support@mapzo.ai`
+- `support@saralone.com` → `support@mapzoai.com`
+- `Saraloneoffice@gmail.com` → `support@mapzoai.com`
 
 #### Brand Name Changes
 - "SARALONE" → "Mapzo AI"
@@ -160,7 +160,7 @@ All logo references now use the new SVG:
 2. **Update DNS** - Point mapzo.ai domain to hosting
 3. **Test in browsers** - Verify favicon displays correctly
 4. **Update social media** - Change profiles to @mapzoai
-5. **Update email** - Set up support@mapzo.ai
+5. **Update email** - Set up support@mapzoai.com
 6. **301 Redirects** - Set up redirects from saralone.com to mapzo.ai (if needed)
 7. **Google Search Console** - Add new domain property
 8. **Update analytics** - Update tracking for new domain

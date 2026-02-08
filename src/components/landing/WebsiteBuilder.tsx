@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Globe, Search, Image, MessageSquare, FileText, Smartphone, Check } from 'lucide-react';
+import { Globe, Search, Image, MessageSquare, FileText, Smartphone, Check, Menu } from 'lucide-react';
 
 const features = [
   { icon: Search, label: 'SEO optimized', description: 'Built for search engines from the ground up' },
@@ -88,19 +88,26 @@ export function WebsiteBuilder() {
 
                 {/* Navigation */}
                 <div className="px-6 py-4 border-b border-neutral-200">
-                  <div className="flex gap-6">
-                    {['Home', 'About', 'Services', 'Reviews', 'Contact'].map((item, i) => (
-                      <motion.span
-                        key={item}
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.5 + i * 0.1 }}
-                        className={`text-sm font-medium ${i === 0 ? 'text-soft-blue' : 'text-muted-foreground'}`}
-                      >
-                        {item}
-                      </motion.span>
-                    ))}
+                  <div className="flex justify-between items-center">
+                    <div className="hidden md:flex gap-6">
+                      {['Home', 'About', 'Services', 'Reviews', 'Contact'].map((item, i) => (
+                        <motion.span
+                          key={item}
+                          initial={{ opacity: 0, y: 10 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.5 + i * 0.1 }}
+                          className={`text-sm font-medium ${i === 0 ? 'text-soft-blue' : 'text-muted-foreground'}`}
+                        >
+                          {item}
+                        </motion.span>
+                      ))}
+                    </div>
+
+                    {/* Mobile Menu Mock */}
+                    <div className="md:hidden">
+                      <Menu className="w-5 h-5 text-muted-foreground" />
+                    </div>
                   </div>
                 </div>
 
@@ -173,7 +180,7 @@ export function WebsiteBuilder() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 1.6 }}
-              className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-lg border border-green-200"
+              className="hidden md:block absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-lg border border-green-200 z-20"
             >
               <motion.div
                 animate={{ y: [0, -5, 0] }}
@@ -197,7 +204,7 @@ export function WebsiteBuilder() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 1.8 }}
-              className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-lg border border-soft-blue/20"
+              className="hidden md:block absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-lg border border-soft-blue/20 z-20"
             >
               <motion.div
                 animate={{ y: [0, 5, 0] }}

@@ -1,47 +1,55 @@
 import { motion } from 'framer-motion';
-import { Phone, Mail, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MessageCircle, Linkedin, X, Youtube, Facebook, Instagram } from 'lucide-react';
+
+const WhatsAppIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+  </svg>
+);
 
 const footerSections = {
-  services: {
-    title: 'OUR SERVICES',
-    links: [
-      { label: 'AI Agents', href: '#ai-agents' },
-      { label: 'Enterprise Software', href: '#enterprise-software' },
-      { label: 'Ecommerce', href: '#ecommerce' },
-      { label: 'MVP/Custom Software', href: '#mvp-custom' },
-      { label: 'Websites', href: '#websites' },
-      { label: 'Internal/Business Tools', href: '#business-tools' },
-    ]
-  },
-  industry: {
-    title: 'INDUSTRY',
-    links: [
-      { label: 'Healthcare', href: '#healthcare' },
-      { label: 'Logistics', href: '#logistics' },
-      { label: 'Ecommerce', href: '#ecommerce-industry' },
-      { label: 'Real Estate', href: '#real-estate' },
-      { label: 'Retail', href: '#retail' },
-      { label: 'Manufacturing', href: '#manufacturing' },
-      { label: 'AI/ML, Deeptech, IoT etc', href: '#ai-ml' },
-    ]
-  },
   about: {
     title: 'ABOUT US',
     links: [
-      { label: 'About', href: '#about' },
-      { label: 'Career', href: '#career' },
-      { label: 'Projects', href: '#projects' },
-      { label: 'Blogs', href: '#blogs' },
+      { label: 'About', href: '/about' },
+      { label: 'Products', href: '/#products' },
+      { label: 'FAQ', href: '/#faq' },
     ]
   },
-  presence: {
-    title: 'OUR PRESENCE',
+  features: {
+    title: 'FEATURES',
     links: [
-      { label: 'Clutch (5/5 Rating Placeholder)', href: '#clutch' },
-      { label: 'GoodFirms', href: '#goodfirms' },
-      { label: 'awwwards', href: '#awwwards' },
-      { label: 'Behance', href: '#behance' },
-      { label: 'Dribbble', href: '#dribbble' },
+      { label: 'Google Business Profile Optimization', href: 'https://login.mapzoai.com/' },
+      { label: 'AI Local SEO Audit & Score', href: 'https://login.mapzoai.com/' },
+      { label: 'Review Management', href: 'https://login.mapzoai.com/' },
+      { label: 'AI Post Scheduling', href: 'https://login.mapzoai.com/' },
+      { label: 'AI Website Builder', href: 'https://login.mapzoai.com/' },
+      { label: 'Ranking & Performance Tracking', href: 'https://login.mapzoai.com/' },
+      { label: 'Multi-Location Management', href: 'https://login.mapzoai.com/' },
+    ]
+  },
+  legal: {
+    title: 'LEGAL',
+    links: [
+      { label: 'Terms & Conditions', href: '/about#terms' },
+      { label: 'Privacy Policy', href: '/about#privacy' },
+      { label: 'Refund / Cancellation Policy', href: '/about#refund' },
+    ]
+  },
+  social: {
+    title: 'SOCIAL',
+    links: [
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/mapzoai/', icon: Linkedin },
+      { label: 'X', href: '#twitter', icon: X },
+      { label: 'YouTube', href: '#youtube', icon: Youtube },
+      { label: 'Facebook', href: 'https://www.facebook.com/share/1AMrfjNNov/', icon: Facebook },
+      { label: 'Instagram', href: 'https://www.instagram.com/mapzo.ai/', icon: Instagram },
+      { label: 'WhatsApp', href: 'https://wa.me/7771808677', icon: WhatsAppIcon },
     ]
   }
 };
@@ -83,59 +91,19 @@ export function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">7771880677</span>
+                  <span className="text-sm text-muted-foreground">+91-7771808677</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">support@mapzo.ai</span>
+                  <span className="text-sm text-muted-foreground">support@mapzoai.com</span>
                 </div>
               </div>
             </motion.div>
           </div>
 
-          {/* Services Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-          >
-            <h4 className="text-sm font-bold text-soft-blue mb-6">{footerSections.services.title}</h4>
-            <ul className="space-y-3">
-              {footerSections.services.links.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-soft-blue transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
 
-          {/* Industry Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <h4 className="text-sm font-bold text-soft-blue mb-6">{footerSections.industry.title}</h4>
-            <ul className="space-y-3">
-              {footerSections.industry.links.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-soft-blue transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+
+
 
           {/* About Us Section */}
           <motion.div
@@ -159,16 +127,60 @@ export function Footer() {
             </ul>
           </motion.div>
 
-          {/* Our Presence Section */}
+          {/* Features Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            <h4 className="text-sm font-bold text-soft-blue mb-6">{footerSections.presence.title}</h4>
+            <h4 className="text-sm font-bold text-soft-blue mb-6">{footerSections.features.title}</h4>
             <ul className="space-y-3">
-              {footerSections.presence.links.map((link, index) => (
+              {footerSections.features.links.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-soft-blue transition-colors duration-200"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Social Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+          >
+            <h4 className="text-sm font-bold text-soft-blue mb-6">{footerSections.social.title}</h4>
+            <div className="flex gap-4">
+              {footerSections.social.links.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-muted-foreground hover:bg-soft-blue hover:text-white transition-all duration-300"
+                  aria-label={link.label}
+                >
+                  <link.icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Legal Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6 }}
+          >
+            <h4 className="text-sm font-bold text-soft-blue mb-6">{footerSections.legal.title}</h4>
+            <ul className="space-y-3">
+              {footerSections.legal.links.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
@@ -188,41 +200,15 @@ export function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-neutral-200"
+          className="flex flex-col md:flex-row items-center relative pt-8 border-t border-neutral-200"
         >
-          <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
-            <a
-              href="#terms"
-              className="text-sm text-muted-foreground hover:text-soft-blue transition-colors"
-            >
-              Term & Conditions
-            </a>
-            <a
-              href="#privacy"
-              className="text-sm text-muted-foreground hover:text-soft-blue transition-colors"
-            >
-              Privacy Policy
-            </a>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <p className="text-sm text-muted-foreground">
+          <div className="w-full flex justify-center order-2 md:order-1">
+            <p className="text-sm text-muted-foreground text-center">
               © 2025 Mapzo AI All Rights Reserved
             </p>
-
-            {/* WhatsApp Button */}
-            <motion.a
-              href="https://wa.me/7771880677"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow"
-              aria-label="Contact us on WhatsApp"
-            >
-              <MessageCircle className="w-6 h-6" />
-            </motion.a>
           </div>
+
+
         </motion.div>
       </div>
     </footer>

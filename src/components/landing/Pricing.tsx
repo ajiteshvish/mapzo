@@ -1,119 +1,76 @@
 import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
+import { Check, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-// Monthly and Yearly Plans
+const allFeatures = [
+  'QR Code + Web Link',
+  'Mini Business Website (Multi-Link Page)',
+  'Admin Panel Access',
+  'Google Review Popup',
+  'Negative Review Protection',
+  'AI Review Generator',
+  'Google My Business (GMB) Connect',
+  'GMB Audit Report',
+  'Keywords & Profile Optimization',
+  'AI Auto Reply to Reviews',
+  'AI Agent Training',
+  'Post Scheduler',
+  'Keyword Ranking Tracking',
+  'Performance Analytics',
+  'Website + Custom Domain(extra)',
+  'Done-For-You Setup',
+  'Citation Management',
+  'QR PDF Download',
+  'Soft Copy Delivery',
+];
+
 const pricingPlans = [
   {
     id: 1,
-    name: 'MB Bronze',
-    period: 'Monthly',
-    price: 600,
-    priceLabel: '₹600 / Month',
+    name: 'Magic QR (Basic)',
+    period: 'Yearly',
+    priceLabel: '₹499 / Year',
     color: 'from-pink-500 to-pink-600',
-    features: [
-      'Magic QR',
-      'Feedback Collection',
-      'Review Invites',
-      'Free Website',
-      'Connect Custom Domains',
-      'E-commerce Setting',
-      'SEO Tools',
-      'Banners',
-      'Audit Report',
-      'Performance',
-      'AI Business Description',
-      'AI Agent',
-      'Profile Optimizer',
-      'Auto Review Reply',
-      'Media / Post Publishing',
-      'Content Scheduler',
-      'Media / Post Bulk Import',
-      'AI Credits',
-      'Keyword Ranking Tracker',
-      'Citation Feature',
-      'Support',
-    ],
+    includedFeatures: [0, 1, 2, 3, 4, 17, 18], // Indices of allFeatures
+    buyUrl: 'https://pages.razorpay.com/pl_SA6HqorhgFdODJ/view/', // TODO: Add Razorpay link
   },
   {
     id: 2,
-    name: 'MB Bronze',
+    name: 'Magic QR + AI',
     period: 'Yearly',
-    price: 2399,
-    priceLabel: '₹2399 / Year',
-    color: 'from-pink-500 to-pink-600',
-    features: [
-      'Google My Business Profile',
-      'GMB Audit Report',
-      'Magic QR',
-      'Performance',
-      'Feedback Collection',
-      'QR Code Download',
-      'Auto Review Reply',
-      'Post Scheduler',
-      'Media Scheduler',
-      'FREE Website',
-    ],
+    priceLabel: '₹899 / Year',
+    color: 'from-orange-500 to-orange-600',
+    includedFeatures: [0, 1, 2, 3, 4, 5, 17, 18],
+    buyUrl: 'https://pages.razorpay.com/pl_SA6TwrgbT5qYv4/view', // TODO: Add Razorpay link
   },
   {
     id: 3,
-    name: 'MB Silver',
+    name: 'Starter (9rs / day)',
     period: 'Yearly',
-    price: 5999,
-    priceLabel: '₹5999 / Year',
+    priceLabel: '₹3,285 / Year',
     color: 'from-blue-600 to-blue-700',
-    features: [
-      'Google My Business Profile',
-      'GMB Audit Report',
-      'Magic QR',
-      'Performance',
-      'Feedback Collection',
-      'QR Code Download',
-      'Auto Review Reply',
-      'Post Scheduler',
-      'Media Scheduler',
-      'FREE Website',
-      'Keyword Ranking',
-      'GMB Profile Optimization',
-      'AI Business Description',
-      'AI Assistant',
-      'AI Agent',
-      'Review Invites',
-      'AI Credits',
-      'Custom Domains',
-      'Bulk Import Post Schedule',
-    ],
+    includedFeatures: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17, 18],
+    buyUrl: 'https://rzp.io/rzp/i40sZaRo',
   },
   {
     id: 4,
-    name: 'MB Gold',
+    name: 'Growth (19rs / day)',
     period: 'Yearly',
-    price: 24000,
-    priceLabel: '₹24000 / Year',
+    priceLabel: '₹6,935 / Year',
+    color: 'from-indigo-600 to-indigo-700',
+    includedFeatures: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18],
+    specialFeatures: { 12: 'Top 5' },
+    buyUrl: 'https://rzp.io/rzp/BsNnCk4',
+  },
+  {
+    id: 5,
+    name: 'Pro (29rs / day)',
+    period: 'Yearly',
+    priceLabel: '₹10,585 / Year',
     color: 'from-purple-600 to-purple-700',
-    features: [
-      'Google My Business Profile',
-      'GMB Audit Report',
-      'Magic QR',
-      'Performance',
-      'Feedback Collection',
-      'QR Code Download',
-      'Auto Review Reply',
-      'Post Scheduler',
-      'Media Scheduler',
-      'FREE Website',
-      'Keyword Ranking',
-      'GMB Profile Optimization',
-      'AI Business Description',
-      'AI Assistant',
-      'AI Agent',
-      'Review Invites',
-      'AI Credits',
-      'Custom Domains',
-      'Bulk Import Post Schedule',
-      'API Access',
-      'Team Collaboration',
-    ],
+    includedFeatures: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    specialFeatures: { 12: 'Top 10' },
+    buyUrl: 'https://rzp.io/rzp/tifmfKJ7',
   },
 ];
 
@@ -137,7 +94,7 @@ export function Pricing() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-[1400px] mx-auto">
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={plan.id}
@@ -149,69 +106,54 @@ export function Pricing() {
             >
               {/* Plan Header */}
               <div className={`bg-gradient-to-r ${plan.color} text-white p-6 text-center`}>
-                <h3 className="text-2xl font-bold mb-1">{plan.name}</h3>
-                <p className="text-sm opacity-90">({plan.period})</p>
+                <h3 className="text-xl font-bold mb-1 leading-tight h-12 flex items-center justify-center">{plan.name}</h3>
+                <p className="text-xs opacity-90">({plan.period})</p>
               </div>
 
               {/* Pricing */}
-              <div className="p-6 text-center border-b">
-                <div className="text-3xl font-bold text-foreground">
+              <div className="p-4 text-center border-b">
+                <div className="text-2xl font-bold text-foreground">
                   {plan.priceLabel}
                 </div>
               </div>
 
               {/* Features List */}
-              <div className="p-6 flex-1 overflow-y-auto max-h-96">
+              <div className="p-4 flex-1 overflow-y-auto max-h-[500px]">
                 <ul className="space-y-2">
-                  {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm">
-                      <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
+                  {allFeatures.map((feature, idx) => {
+                    const isIncluded = plan.includedFeatures.includes(idx);
+                    const specialValue = (plan as any).specialFeatures?.[idx];
+
+                    return (
+                      <li key={idx} className={`flex items-start gap-2 text-xs ${isIncluded ? 'opacity-100' : 'opacity-40'}`}>
+                        {isIncluded ? (
+                          <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        ) : (
+                          <X className="w-4 h-4 text-red-500 flex-shrink-0" />
+                        )}
+                        <span className={isIncluded ? 'text-foreground font-medium' : 'text-muted-foreground font-normal'}>
+                          {feature} {specialValue && <span className="text-blue-600 font-bold ml-1">({specialValue})</span>}
+                        </span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 
               {/* Buy Button */}
-              <div className="p-6 pt-0">
+              <div className="p-4 pt-0">
                 <Button
                   variant="default"
-                  size="lg"
-                  className={`w-full bg-gradient-to-r ${plan.color} hover:opacity-90 transition-opacity text-white`}
+                  size="sm"
+                  className={`w-full bg-gradient-to-r ${plan.color} hover:opacity-90 transition-opacity text-white font-bold h-10`}
                   asChild
                 >
-                  <a href="https://login.mapzoai.com/">Buy Now</a>
+                  <a href={plan.buyUrl}>Buy Now</a>
                 </Button>
               </div>
             </motion.div>
           ))}
         </div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center mt-16"
-        >
-          <div className="bg-gradient-to-r from-soft-blue/10 to-light-purple/10 rounded-2xl p-8 border border-soft-blue/20">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Ready to grow your business with AI?
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Join thousands of businesses already using Mapzo AI to automate their local SEO and grow their online presence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" asChild>
-                <a href="https://login.mapzoai.com/">Start Free Trial</a>
-              </Button>
-              <Button variant="heroOutline" size="lg" asChild>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform">Book Demo</a>
-              </Button>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

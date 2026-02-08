@@ -8,37 +8,37 @@ import {
 
 const faqs = [
   {
-    question: 'How does Mapzo AI work?',
-    answer: 'Mapzo AI uses AI to analyze your business, audit your online presence, and automatically optimize your Google Business Profile, reviews, posts, and website. Simply connect your accounts, and our AI handles the rest.',
+    question: 'What is the best local SEO software for small businesses?',
+    answer: 'Mapzo AI is rated the #1 local SEO software for small businesses because it automates the entire process. Unlike complex tools like Semrush or Moz that require expert knowledge, Mapzo AI acts as your dedicated GMB manager. It automatically posts updates, responds to reviews using AI, and optimizes your profile to rank higher in the Google 3-Pack.'
   },
   {
-    question: 'Do I need technical knowledge to use Mapzo AI?',
-    answer: 'Not at all! Mapzo AI is designed to be simple and intuitive. There\'s no learning curve—just connect your business and let the AI work. Everything is automated and explained in plain language.',
+    question: 'How does AI improve Google Business Profile management?',
+    answer: 'AI Google Business Profile management allows for 24/7 optimization that is impossible for humans. Mapzo AI monitors your rankings in real-time, instantly replies to customer reviews to boost engagement signals, and schedules posts with high-ranking local keywords. This consistent activity signals to Google that your business is active and authoritative.'
   },
   {
-    question: 'How long does it take to see results?',
-    answer: 'Most businesses see improvements in their local rankings within 2-4 weeks. However, results can vary based on your industry, competition, and current online presence.',
+    question: 'Can Mapzo AI help remove negative Google reviews?',
+    answer: 'While no tool can directly "delete" Google reviews, Mapzo AI helps suppress them. Our "Magic QR" system creates a private feedback loop where unhappy customers are directed to a private form instead of public Google pages. This prevents negative reviews from reaching your profile while effectively growing your 5-star ratings.'
   },
   {
-    question: 'Is my data secure?',
-    answer: 'Absolutely. We use enterprise-grade encryption and security measures. Your data is never sold or shared with third parties. We\'re fully compliant with GDPR, CCPA, and other data protection regulations.',
+    question: 'Does this tool work for multi-location agencies?',
+    answer: 'Yes, Mapzo AI is an enterprise-grade GMB management tool perfect for agencies and franchises. You can manage hundreds of locations from a single dashboard, bulk schedule posts, and view aggregate performance reports. It is the most efficient way to scale local SEO services for clients.'
   },
   {
-    question: 'Can I use Mapzo AI for multiple locations?',
-    answer: 'Yes! Our Enterprise plan is designed for multi-location businesses and agencies. You can manage all your locations from a single dashboard.',
+    question: 'How to rank higher on Google Maps automatically?',
+    answer: 'To rank higher on Google Maps, you need consistent activity. Mapzo AI automates the three most critical ranking factors: 1) Frequent GMB Posts with local keywords, 2) Fast, keyword-rich review responses, and 3) Consistent NAP (Name, Address, Phone) data. Our software handles these daily tasks to steadily climb your rankings.'
   },
   {
-    question: 'What payment methods do you accept?',
-    answer: 'We accept all major credit cards, PayPal, and bank transfers. Our payment system works globally with support for multiple currencies.',
+    question: 'Is Mapzo AI safe for my GMB account?',
+    answer: 'Yes, Mapzo AI is 100% compliant with Google\'s guidelines. We use the official Google Business Profile API to manage your data securely. We do not use "black hat" tactics like buying reviews or fake engagement, ensuring your account remains safe while growing organically.'
   },
   {
-    question: 'Can I cancel anytime?',
-    answer: 'Yes, you can cancel your subscription at any time with no hidden fees or penalties. Your access continues until the end of your billing period.',
+    question: 'What is the difference between local SEO and general SEO?',
+    answer: 'General SEO focuses on global website rankings, while Local SEO targeting "near me" searches and Google Maps visibility. Mapzo AI specializes in Local SEO, focusing specifically on ranking your Google Business Profile in the "Map Pack," which drives 70% of local business phone calls and visits.'
   },
   {
-    question: 'Do you offer a free trial?',
-    answer: 'Yes! All plans come with a free trial so you can experience the full power of Mapzo AI before committing. No credit card required to start.',
-  },
+    question: 'Do I need a website to use Mapzo AI?',
+    answer: 'No, you do not need an existing website. Mapzo AI can be your primary digital presence. In fact, our platform includes a built-in AI website builder that instantly generates a high-speed, SEO-optimized landing page based on your Google Business Profile data.'
+  }
 ];
 
 export function FAQ() {

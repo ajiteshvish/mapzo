@@ -4,14 +4,11 @@ import { Hero } from '@/components/landing/Hero';
 import { Products } from '@/components/landing/Products';
 import { PainPoints } from '@/components/landing/PainPoints';
 import { HowItWorks } from '@/components/landing/HowItWorks';
-import { AuditScore } from '@/components/landing/AuditScore';
-import { OneClick } from '@/components/landing/OneClick';
-import { Reviews } from '@/components/landing/Reviews';
-import { PostScheduler } from '@/components/landing/PostScheduler';
+
+
 import { WebsiteBuilder } from '@/components/landing/WebsiteBuilder';
 import { Pricing } from '@/components/landing/Pricing';
-import { Security } from '@/components/landing/Security';
-import { Support } from '@/components/landing/Support';
+
 import { Testimonials } from '@/components/landing/Testimonials';
 import { FAQ } from '@/components/landing/FAQ';
 import { FinalCTA } from '@/components/landing/FinalCTA';
@@ -27,9 +24,7 @@ const Index = () => {
     'pain-points',
     'how-it-works',
     'features',
-    'one-click',
-    'reviews',
-    'post-scheduler',
+
     'website-builder',
     'testimonials',
     'pricing',
@@ -42,33 +37,33 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Mapzo AI - AI Local SEO Manager | Rank Higher Automatically</title>
+        <title>Mapzo AI - #1 Local SEO Software & GMB Management Tool</title>
         <meta
           name="description"
-          content="Mapzo AI is an AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website. Start ranking higher today with our comprehensive local SEO automation platform."
+          content="Automate your local growth with Mapzo AI. The top-rated Google Business Profile management tool and AI local SEO software for small businesses. Try for free."
         />
-        <meta name="keywords" content="local SEO, AI SEO, Google Business Profile, local rankings, review management, SEO automation, local search optimization, Google My Business, local SEO tools, automated SEO" />
-        <link rel="canonical" href="https://mapzo.ai" />
+        <meta name="keywords" content="local seo software, google business profile management tool, ai local seo, gmb optimization tool, google maps ranking software, local seo automation" />
+        <link rel="canonical" href="https://mapzoai.com" />
 
         {/* Favicon and Icons */}
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta property="og:image" content="https://mapzo.ai/site.png" />
-        <meta name="twitter:image" content="https://mapzo.ai/site.png" />
+        <meta property="og:image" content="https://mapzoai.com/site.png" />
+        <meta name="twitter:image" content="https://mapzoai.com/site.png" />
 
         {/* Enhanced Open Graph */}
-        <meta property="og:title" content="Mapzo AI - AI Local SEO Manager | Rank Higher Automatically" />
-        <meta property="og:description" content="AI-powered Local SEO that helps you rank higher, automatically. Manage your Google Business Profile, reviews, posts, and website with intelligent automation." />
+        <meta property="og:title" content="Mapzo AI - #1 Local SEO Software & GMB Management Tool" />
+        <meta property="og:description" content="Automate your local growth with Mapzo AI. The top-rated Google Business Profile management tool and AI local SEO software." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mapzo.ai" />
+        <meta property="og:url" content="https://mapzoai.com" />
         <meta property="og:site_name" content="Mapzo AI" />
         <meta property="og:locale" content="en_US" />
 
         {/* Enhanced Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mapzo AI - AI Local SEO Manager | Rank Higher Automatically" />
-        <meta name="twitter:description" content="AI-powered Local SEO that helps you rank higher, automatically. Comprehensive local SEO automation platform." />
+        <meta name="twitter:title" content="Mapzo AI - #1 Local SEO Software & GMB Management Tool" />
+        <meta name="twitter:description" content="Automate your local growth with Mapzo AI. The top-rated Google Business Profile management tool and AI local SEO software." />
         <meta name="twitter:site" content="@mapzoai" />
 
         {/* Additional SEO Meta Tags */}
@@ -85,13 +80,20 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Mapzo AI",
-            "url": "https://mapzo.ai",
-            "description": "AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website.",
+            "url": "https://mapzoai.com",
+            "logo": "https://mapzoai.com/logo.png",
+            "description": "AI-powered Local SEO Software & Google Business Profile Management Tool.",
             "foundingDate": "2024",
             "sameAs": [
               "https://twitter.com/mapzoai",
               "https://linkedin.com/company/mapzoai"
-            ]
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+917771880677",
+              "contactType": "sales",
+              "email": "support@mapzoai.com"
+            }
           })}
         </script>
 
@@ -101,11 +103,11 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "Mapzo AI",
-            "url": "https://mapzo.ai",
-            "description": "AI Local SEO Manager | Rank Higher Automatically",
+            "url": "https://mapzoai.com",
+            "description": "AI Local SEO Software & GMB Management Tool",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://mapzo.ai/search?q={search_term_string}",
+              "target": "https://mapzoai.com/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })}
@@ -120,7 +122,7 @@ const Index = () => {
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
             "description": "AI-powered Local SEO Manager that automatically improves your Google Business Profile, rankings, reviews, posts, and website.",
-            "url": "https://mapzo.ai",
+            "url": "https://mapzoai.com",
             "offers": {
               "@type": "Offer",
               "price": "0",
@@ -134,6 +136,80 @@ const Index = () => {
             }
           })}
         </script>
+
+        {/* Structured Data - FAQPage */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best local SEO software for small businesses?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mapzo AI is rated the #1 local SEO software for small businesses because it automates the entire process. Unlike complex tools like Semrush or Moz that require expert knowledge, Mapzo AI acts as your dedicated GMB manager."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does AI improve Google Business Profile management?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Google Business Profile management allows for 24/7 optimization. Mapzo AI monitors your rankings in real-time, instantly replies to customer reviews, and schedules posts with high-ranking local keywords."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can Mapzo AI help remove negative Google reviews?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mapzo AI helps suppress negative reviews using our \"Magic QR\" system, creating a private feedback loop where unhappy customers are directed to a private form instead of public Google pages."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How to rank higher on Google Maps automatically?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mapzo AI automates critical ranking factors: 1) Frequent GMB Posts with keywords, 2) Fast review responses, and 3) Consistent NAP data to steadily climb your rankings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this tool work for multi-location agencies?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Mapzo AI is an enterprise-grade GMB management tool perfect for agencies and franchises. You can manage hundreds of locations from a single dashboard, bulk schedule posts, and view aggregate performance reports."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Mapzo AI safe for my GMB account?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Mapzo AI is 100% compliant with Google's guidelines. We use the official Google Business Profile API to manage your data securely and do not use \"black hat\" tactics."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between local SEO and general SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "General SEO focuses on global website rankings, while Local SEO targeting \"near me\" searches and Google Maps visibility. Mapzo AI specializes in Local SEO to rank you in the \"Map Pack\"."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a website to use Mapzo AI?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Mapzo AI can be your primary digital presence. Our platform includes a built-in AI website builder that instantly generates a high-speed, SEO-optimized landing page based on your Business Profile data."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ScrollProgress />
@@ -141,42 +217,31 @@ const Index = () => {
         <Header />
         <FloatingActionButton />
         <ChatbotTrigger />
-        <section id="hero">
+        <section id="hero" className="scroll-mt-32">
           <Hero />
         </section>
-        <section id="products">
+        <section id="products" className="scroll-mt-32">
           <Products />
         </section>
-        <section id="pain-points">
+        <section id="pain-points" className="scroll-mt-32">
           <PainPoints />
         </section>
-        <section id="how-it-works">
+        <section id="how-it-works" className="scroll-mt-32">
           <HowItWorks />
         </section>
-        <section id="features">
-          <AuditScore />
-        </section>
-        <section id="one-click">
-          <OneClick />
-        </section>
-        <section id="reviews">
-          <Reviews />
-        </section>
-        <section id="post-scheduler">
-          <PostScheduler />
-        </section>
-        <section id="website-builder">
+
+
+        <section id="website-builder" className="scroll-mt-32">
           <WebsiteBuilder />
         </section>
-        <section id="testimonials">
+        <section id="testimonials" className="scroll-mt-32">
           <Testimonials />
         </section>
-        <section id="pricing">
+        <section id="pricing" className="scroll-mt-32">
           <Pricing />
         </section>
-        <Security />
-        <Support />
-        <section id="faq">
+
+        <section id="faq" className="scroll-mt-32">
           <FAQ />
         </section>
         <FinalCTA />

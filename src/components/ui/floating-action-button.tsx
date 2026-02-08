@@ -1,12 +1,13 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Plus, Phone, Mail, Zap, X, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const quickActions = [
     { icon: Zap, label: 'Sign Up', href: 'https://login.mapzoai.com/', color: 'bg-soft-blue' },
-    { icon: Calendar, label: 'Book Demo', href: 'https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform', color: 'bg-purple-500' },
+    { icon: Calendar, label: 'Book Demo', href: '/book-demo', isInternal: true, color: 'bg-purple-500' },
     { icon: Phone, label: 'Call Us', href: 'tel:+917771880677', color: 'bg-green-500' },
-    { icon: Mail, label: 'Email', href: 'mailto:support@mapzo.ai', color: 'bg-orange-500' },
+    { icon: Mail, label: 'Email', href: 'mailto:support@mapzoai.com', color: 'bg-orange-500' },
 ];
 
 export function FloatingActionButton() {
@@ -34,14 +35,24 @@ export function FloatingActionButton() {
                                 <span className="bg-white px-3 py-2 rounded-lg shadow-lg text-sm font-medium text-foreground whitespace-nowrap">
                                     {action.label}
                                 </span>
-                                <motion.a
-                                    href={action.href}
-                                    className={`w-12 h-12 rounded-full ${action.color} flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow touch-target mobile-tap`}
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                >
-                                    <action.icon className="w-5 h-5" />
-                                </motion.a>
+                                {action.isInternal ? (
+                                    <Link
+                                        to={action.href}
+                                        className={`w-12 h-12 rounded-full ${action.color} flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow touch-target mobile-tap`}
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        <action.icon className="w-5 h-5" />
+                                    </Link>
+                                ) : (
+                                    <motion.a
+                                        href={action.href}
+                                        className={`w-12 h-12 rounded-full ${action.color} flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow touch-target mobile-tap`}
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                    >
+                                        <action.icon className="w-5 h-5" />
+                                    </motion.a>
+                                )}
                             </motion.div>
                         ))}
                     </motion.div>

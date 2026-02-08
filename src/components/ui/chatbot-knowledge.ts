@@ -6,7 +6,7 @@ export const chatbotKnowledge = {
         description: "AI-powered Local SEO Manager that automatically optimizes your Google Business Profile, manages reviews, and improves local search rankings",
         location: "F-1, C-09, KLIC, Bhopal, Madhya Pradesh, 462023, India",
         contact: {
-            email: "support@mapzo.ai",
+            email: "support@mapzoai.com",
             phone: "7771880677",
             whatsapp: "7771880677"
         }

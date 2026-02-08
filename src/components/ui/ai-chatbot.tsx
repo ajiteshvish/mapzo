@@ -17,12 +17,12 @@ interface ChatbotProps {
 
 const predefinedResponses = {
     greeting: [
-        "Hi there! I'm SARA, your AI assistant. I'm here to help you learn about Mapzo AI's local SEO services. What would you like to know?",
+        "Hi there! I'm Mapzo AI, your AI assistant. I'm here to help you learn about Mapzo AI's local SEO services. What would you like to know?",
         "Hello! Welcome to Mapzo AI. I can help you understand how our AI-powered local SEO platform works. What questions do you have?",
-        "Hey! I'm SARA, and I'm excited to help you discover how Mapzo AI can boost your local search rankings. What can I help you with today?"
+        "Hey! I'm Mapzo AI, and I'm excited to help you discover how Mapzo AI can boost your local search rankings. What can I help you with today?"
     ],
     pricing: [
-        "Mapzo AI offers comprehensive plans for different needs:\n\n🇮🇳 **India Business Owner Plans:**\n• Business Owner Premium - ₹10,000/GMB (Done-For-You)\n• Business Owner - ₹6,000/GMB (Self-Serve SaaS)\n\n🌍 **Global Business Owner Plans:**\n• Business Owner - $199/GMB (Done-For-You)\n• Premium Business Owner - $129/GMB (Self-Serve SaaS)\n\n🏢 **Agency Plans (India):**\n• Agency Starter - ₹24,000 (20 GMB)\n• Agency Growth - ₹36,000 (50 GMB)\n• Agency Scale - ₹60,000 (100 GMB)\n\n💰 **Special Referral Models:**\n• Non-Commitment: 20% commission\n• Commitment (₹1L): 35% commission\n• High Commitment (₹3L): 50% commission\n\nAll plans include 20% referral rewards. Which plan interests you most?"
+        "Mapzo AI offers 5 flexible plans tailored to your needs:\n\n✨ **Basic Plans:**\n• **Magic QR (Basic)** - ₹499 / year: Essential QR features.\n• **Magic QR + AI** - ₹899 / year: Adds AI Review Generator.\n\n🚀 **Professional Plans:**\n• **Starter (9rs/day)** - ₹3,285 / year: Professional SEO tools.\n• **Growth (19rs/day)** - ₹6,935 / year: Advanced features with Top 5 Keyword Tracking.\n• **Pro (29rs/day)** - ₹10,585 / year: Full suite with Top 10 Keyword Tracking & Done-For-You setup.\n\nAll plans are annual to ensure consistent local SEO growth. Which plan sounds best for your business?"
     ],
     features: [
         "Mapzo AI's AI handles your complete local SEO automatically:\n\n🎯 **Google Business Profile Optimization**\n• Automatic profile updates\n• Keyword optimization\n• Photo management\n\n⭐ **Review Management**\n• AI-generated authentic responses\n• Review monitoring\n• Sentiment analysis\n\n📱 **Content & Social Media**\n• Automated post scheduling\n• Seasonal content creation\n• Multi-platform publishing\n\n📊 **SEO Analytics**\n• Real-time ranking tracking\n• Traffic analysis\n• Competitor insights\n\nWhat specific feature interests you most?"
@@ -34,7 +34,7 @@ const predefinedResponses = {
         "Our AI review management is pretty amazing:\n\n✨ **Authentic Responses**\n• Sounds like you, not a robot\n• Personalized to each review\n• Maintains your brand voice\n\n⚡ **Lightning Fast**\n• Responds within minutes\n• 24/7 monitoring\n• Never misses a review\n\n📈 **Proven Results**\n• 40% increase in response rates\n• Improved local rankings\n• Better customer relationships\n\nBusinesses see ranking improvements within 30 days. Would you like to see some examples?"
     ],
     support: [
-        "We've got your back with multiple support options:\n\n💬 **Live Chat** - Available 24/7\n📧 **Email Support** - support@mapzo.ai\n📞 **Phone Support** - For Professional & Enterprise plans\n📚 **Knowledge Base** - Comprehensive guides\n🎥 **Video Tutorials** - Step-by-step walkthroughs\n\nOur average response time is under 2 hours. Plus, our AI handles most of the work automatically, so you'll rarely need support!\n\nNeed help with something specific?"
+        "We've got your back with multiple support options:\n\n💬 **Live Chat** - Available 24/7\n📧 **Email Support** - support@mapzoai.com\n📞 **Phone Support** - For Professional & Enterprise plans\n📚 **Knowledge Base** - Comprehensive guides\n🎥 **Video Tutorials** - Step-by-step walkthroughs\n\nOur average response time is under 2 hours. Plus, our AI handles most of the work automatically, so you'll rarely need support!\n\nNeed help with something specific?"
     ],
     demo: [
         "I'd love to show you Mapzo AI in action! Here's what you can do:\n\n📞 **Book a Personal Demo**\n• One-on-one walkthrough with our experts\n• Customized to your business needs\n• Q&A with our team\n• See real results from actual businesses\n\n🆓 **Start Free Trial**\n• No credit card required\n• Full access to all features\n• 14 days to explore everything\n\nReady to book your demo? Click here: https://docs.google.com/forms/d/e/1FAIpQLSe6ao8MXwubcMeoWlHzb-mTNVf4id50Dq7xXBW3YqQkauJ9RA/viewform"
@@ -202,7 +202,7 @@ export function AIChatbot({ isOpen, onClose }: ChatbotProps) {
                             <Bot className="w-4 h-4 sm:w-5 sm:h-5" />
                         </div>
                         <div>
-                            <h3 className="font-semibold text-sm sm:text-base">SARA AI Assistant</h3>
+                            <h3 className="font-semibold text-sm sm:text-base">Mapzo AI Assistant</h3>
                             <p className="text-xs opacity-90">Always here to help</p>
                         </div>
                     </div>
@@ -401,7 +401,7 @@ export function ChatbotTrigger() {
                                 <Bot className="w-4 h-4 text-white" />
                             </div>
                             <div>
-                                <p className="text-sm font-medium text-gray-900">Hi! I'm SARA 👋</p>
+                                <p className="text-sm font-medium text-gray-900">Hi! I'm Mapzo AI 👋</p>
                                 <p className="text-xs text-gray-600 mt-1">
                                     I can help you learn about Mapzo AI's AI-powered local SEO features. Ask me anything!
                                 </p>
