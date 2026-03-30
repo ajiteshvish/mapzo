@@ -217,6 +217,7 @@ const Index = () => {
         <Header />
         <FloatingActionButton />
         <ChatbotTrigger />
+
         <section id="hero" className="scroll-mt-32">
           <Hero />
         </section>
