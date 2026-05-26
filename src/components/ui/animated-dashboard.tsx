@@ -10,10 +10,10 @@ interface DashboardProps {
 export function AnimatedDashboard({ variant = 'analytics', className = '' }: DashboardProps) {
     const [currentNotification, setCurrentNotification] = useState(0);
     const [metrics, setMetrics] = useState({
-        seoScore: 94,
-        reviews: 127,
-        ranking: 3,
-        traffic: 47
+        seoScore: 96,
+        reviews: 191,
+        ranking: 8,
+        traffic: 75
     });
 
     const notifications = [

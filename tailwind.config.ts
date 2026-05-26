@@ -64,6 +64,17 @@ export default {
         "light-purple": "hsl(var(--light-purple))",
         "purple-light": "hsl(var(--purple-light))",
         "blue-light": "hsl(var(--blue-light))",
+        blue: {
+          DEFAULT: "#4361ee",
+          dark: "#3451d1",
+          light: "#eef0fd",
+        },
+        text: "#1a1a2e",
+        red: {
+          tag: "#fee2e2",
+          text: "#ef4444",
+        },
+        green: "#4361ee",
         neutral: {
           50: "hsl(var(--neutral-50))",
           100: "hsl(var(--neutral-100))",
@@ -75,6 +86,11 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "14px",
+      },
+      boxShadow: {
+        custom: "0 4px 16px rgba(0,0,0,0.12)",
+        bubble: "0 4px 20px rgba(67,97,238,0.4)",
       },
       keyframes: {
         "accordion-down": {
@@ -117,5 +133,6 @@ export default {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

@@ -5,12 +5,14 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-import ProductDetails from "./pages/ProductDetails";
-import AboutUs from "./pages/AboutUs";
-import BookDemo from "./pages/BookDemo";
-import { ScrollToHash } from "./components/ui/scroll-to-hash";
+import Index from "@/pages/Index";
+import NotFound from "@/pages/NotFound";
+import ProductDetails from "@/pages/ProductDetails";
+import AboutUs from "@/pages/AboutUs";
+import BookDemo from "@/pages/BookDemo";
+import ProductsPage from "@/pages/ProductsPage";
+import PricingPage from "@/pages/PricingPage";
+import { ScrollToHash } from "@/components/ui/scroll-to-hash";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +26,8 @@ const App = () => (
           <ScrollToHash />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/products" element={<ProductsPage />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/book-demo" element={<BookDemo />} />

@@ -1,13 +1,12 @@
 import { Helmet } from 'react-helmet-async';
 import { Header } from '@/components/landing/Header';
 import { Hero } from '@/components/landing/Hero';
-import { Products } from '@/components/landing/Products';
+import { VideoInsights } from '@/components/landing/VideoInsights';
 import { PainPoints } from '@/components/landing/PainPoints';
 import { HowItWorks } from '@/components/landing/HowItWorks';
 
 
 import { WebsiteBuilder } from '@/components/landing/WebsiteBuilder';
-import { Pricing } from '@/components/landing/Pricing';
 
 import { Testimonials } from '@/components/landing/Testimonials';
 import { FAQ } from '@/components/landing/FAQ';
@@ -21,13 +20,11 @@ import { useKeyboardNavigation } from '@/hooks/use-keyboard-navigation';
 const Index = () => {
   const sections = [
     'hero',
+    'insights',
     'pain-points',
-    'how-it-works',
-    'features',
 
     'website-builder',
     'testimonials',
-    'pricing',
     'faq'
   ];
 
@@ -221,8 +218,8 @@ const Index = () => {
         <section id="hero" className="scroll-mt-32">
           <Hero />
         </section>
-        <section id="products" className="scroll-mt-32">
-          <Products />
+        <section id="insights" className="scroll-mt-32">
+          <VideoInsights />
         </section>
         <section id="pain-points" className="scroll-mt-32">
           <PainPoints />
@@ -237,9 +234,6 @@ const Index = () => {
         </section>
         <section id="testimonials" className="scroll-mt-32">
           <Testimonials />
-        </section>
-        <section id="pricing" className="scroll-mt-32">
-          <Pricing />
         </section>
 
         <section id="faq" className="scroll-mt-32">

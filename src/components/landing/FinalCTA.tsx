@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight, Calendar, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function FinalCTA() {
@@ -56,11 +56,21 @@ export function FinalCTA() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="mt-12 flex flex-wrap gap-6 justify-center items-center text-sm text-muted-foreground"
+            className="mt-12 flex flex-wrap gap-8 justify-center items-center text-sm font-medium text-slate-500"
           >
-            <span>✓ No credit card required</span>
+            <span className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded-full bg-green-50 flex items-center justify-center">
+                <Check className="w-3 h-3 text-green-600" />
+              </div>
+              No credit card required
+            </span>
 
-            <span>✓ Full access during trial</span>
+            <span className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center">
+                <ArrowRight className="w-3 h-3 text-blue-600 rotate-[-45deg]" />
+              </div>
+              Full access during trial
+            </span>
           </motion.div>
         </motion.div>
       </div>

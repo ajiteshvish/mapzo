@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Phone, Mail, MessageCircle, Linkedin, X, Youtube, Facebook, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg
@@ -12,13 +13,37 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+const USFlagIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 20 14" className={className} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="20" height="14" fill="#b22234" />
+    <rect y="1.08" width="20" height="1.08" fill="#fff" />
+    <rect y="3.23" width="20" height="1.08" fill="#fff" />
+    <rect y="5.38" width="20" height="1.08" fill="#fff" />
+    <rect y="7.54" width="20" height="1.08" fill="#fff" />
+    <rect y="9.69" width="20" height="1.08" fill="#fff" />
+    <rect y="11.85" width="20" height="1.08" fill="#fff" />
+    <rect width="8.8" height="7.54" fill="#3c3b6e" />
+  </svg>
+);
+
+const IndiaFlagIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 20 14" className={className} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="20" height="4.67" fill="#ff9933" />
+    <rect y="4.67" width="20" height="4.67" fill="#fff" />
+    <rect y="9.34" width="20" height="4.66" fill="#128807" />
+    <circle cx="10" cy="7" r="1.1" fill="#000080" />
+  </svg>
+);
+
 const footerSections = {
   about: {
     title: 'ABOUT US',
     links: [
+      { label: 'Home', href: '/' },
       { label: 'About', href: '/about' },
-      { label: 'Products', href: '/#products' },
-      { label: 'FAQ', href: '/#faq' },
+      { label: 'Products', href: '/products' },
+      { label: 'Fetures', href: '/#how-it-works' },
+      { label: 'Pricing', href: '/pricing' },
     ]
   },
   features: {
@@ -91,7 +116,17 @@ export function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">+91-7771808677</span>
+                  <span className="text-sm text-muted-foreground flex items-center gap-2">
+                    <USFlagIcon className="w-4 h-3 rounded-[1px] shrink-0" />
+                    +18382222758
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground flex items-center gap-2">
+                    <IndiaFlagIcon className="w-4 h-3 rounded-[1px] shrink-0" />
+                    +919403892801
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-muted-foreground" />
@@ -116,12 +151,12 @@ export function Footer() {
             <ul className="space-y-3">
               {footerSections.about.links.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-sm text-muted-foreground hover:text-soft-blue transition-colors duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

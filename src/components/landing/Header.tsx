@@ -72,7 +72,7 @@ const navItems = [
         title: 'Learn & Support',
         items: [
           { icon: MessageSquare, label: 'Contact Us', description: 'Send us an email, so we can support you and answer your questions', href: '#contact' },
-          { icon: BookOpen, label: 'Knowledge Base', description: 'Read detailed guides about Localo and how it works', href: '#knowledge' },
+          { icon: BookOpen, label: 'Knowledge Base', description: 'Read detailed guides about Mapzo AI and how it works', href: '#knowledge' },
           { icon: FileText, label: 'Blog', description: 'Find strategies for local marketing and SEO for businesses in Google', href: '#blog' }
         ]
       }
@@ -86,7 +86,7 @@ const navItems = [
   },
   {
     label: 'Pricing',
-    href: '#pricing',
+    href: '/pricing',
     hasDropdown: false
   }
 ];
@@ -166,21 +166,30 @@ export function Header() {
             {/* Desktop Navigation */}
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
-              {location.pathname === '/about' ? (
-                <Link
-                  to="/"
-                  className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
-                >
-                  Home
-                </Link>
-              ) : (
-                <Link
-                  to="/about"
-                  className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
-                >
-                  About Us
-                </Link>
-              )}
+              <a
+                href="/#hero"
+                className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
+                onClick={(e) => {
+                  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+                    e.preventDefault();
+                    document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                Home
+              </a>
+              <Link
+                to="/about"
+                className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
+              >
+                About Us
+              </Link>
+              <Link
+                to="/products"
+                className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
+              >
+                Products
+              </Link>
               <a
                 href="/#how-it-works"
                 className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
@@ -193,18 +202,15 @@ export function Header() {
               >
                 Features
               </a>
-              <a
-                href="/#pricing"
+              <Link
+                to="/pricing"
                 className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
-                onClick={(e) => {
-                  if (window.location.pathname === '/') {
-                    e.preventDefault();
-                    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
-                  }
+                onClick={() => {
+                  window.scrollTo(0, 0);
                 }}
               >
                 Pricing
-              </a>
+              </Link>
             </nav>
 
             {/* Desktop CTA */}
@@ -245,15 +251,19 @@ export function Header() {
             >
               <div className="container mx-auto px-4 py-6">
                 <nav className="flex flex-col gap-4">
-                  {location.pathname === '/about' ? (
-                    <Link
-                      to="/"
+                    <a
+                      href="/#hero"
                       className="flex items-center justify-between text-muted-foreground hover:text-soft-blue transition-colors duration-200 text-base font-medium py-3"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={(e) => {
+                        setIsMobileMenuOpen(false);
+                        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+                          e.preventDefault();
+                          document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
                     >
                       Home
-                    </Link>
-                  ) : (
+                    </a>
                     <Link
                       to="/about"
                       className="flex items-center justify-between text-muted-foreground hover:text-soft-blue transition-colors duration-200 text-base font-medium py-3"
@@ -261,7 +271,13 @@ export function Header() {
                     >
                       About Us
                     </Link>
-                  )}
+                  <Link
+                    to="/products"
+                    className="flex items-center justify-between text-muted-foreground hover:text-soft-blue transition-colors duration-200 text-base font-medium py-3"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Products
+                  </Link>
                   <a
                     href="/#how-it-works"
                     className="flex items-center justify-between text-muted-foreground hover:text-soft-blue transition-colors duration-200 text-base font-medium py-3"
@@ -275,19 +291,16 @@ export function Header() {
                   >
                     Features
                   </a>
-                  <a
-                    href="/#pricing"
+                  <Link
+                    to="/pricing"
                     className="flex items-center justify-between text-muted-foreground hover:text-soft-blue transition-colors duration-200 text-base font-medium py-3"
-                    onClick={(e) => {
+                    onClick={() => {
                       setIsMobileMenuOpen(false);
-                      if (window.location.pathname === '/') {
-                        e.preventDefault();
-                        document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
-                      }
+                      window.scrollTo(0, 0);
                     }}
                   >
                     Pricing
-                  </a>
+                  </Link>
 
                   <div className="flex flex-col gap-3 pt-4 border-t border-neutral-200">
                     <Button

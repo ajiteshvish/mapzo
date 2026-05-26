@@ -132,10 +132,9 @@ export default function BookDemo() {
                 </Link>
                 <Link to="/">
                     <img
-                        src="/logo-full.png"
-                        alt="mapzo.ai"
-                        className="h-8 w-auto"
-                        onError={(e) => (e.currentTarget.src = "/logo.png")}
+                        src="originals/logo.png"
+                        alt="Mapzo AI"
+                        className="h-8 w-auto mix-blend-multiply"
                     />
                 </Link>
             </div>
