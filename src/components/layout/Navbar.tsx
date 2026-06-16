@@ -58,6 +58,11 @@ export default function Navbar() {
           </a>
         </li>
         <li>
+          <Link to="/blog" className="no-underline text-[#374151] hover:text-[#4361ee] font-medium text-[15px] transition-colors">
+            Blog
+          </Link>
+        </li>
+        <li>
           <Link to="/pricing" className="no-underline text-[#374151] hover:text-[#4361ee] font-medium text-[15px] transition-colors">
             Pricing
           </Link>
@@ -120,7 +125,10 @@ export default function Navbar() {
               <Link to="/products" className="no-underline text-inherit hover:text-[#4361ee] block w-full">Products</Link>
             </li>
             <li className="border-b border-gray-100 pb-4">
-              <Link to="/pricing" className="no-underline text-inherit hover:text-[#4361ee] block w-full">Pricing</Link>
+              <Link to="/blog" className="no-underline text-inherit hover:text-[#4361ee] block w-full" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
+            </li>
+            <li className="border-b border-gray-100 pb-4">
+              <Link to="/pricing" className="no-underline text-inherit hover:text-[#4361ee] block w-full" onClick={() => setIsMobileMenuOpen(false)}>Pricing</Link>
             </li>
           </ul>
           

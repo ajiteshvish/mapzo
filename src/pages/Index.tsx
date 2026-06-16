@@ -9,6 +9,7 @@ import { HowItWorks } from '@/components/landing/HowItWorks';
 import { WebsiteBuilder } from '@/components/landing/WebsiteBuilder';
 
 import { Testimonials } from '@/components/landing/Testimonials';
+import { BlogSection } from '@/components/landing/BlogSection';
 import { FAQ } from '@/components/landing/FAQ';
 import { FinalCTA } from '@/components/landing/FinalCTA';
 import { Footer } from '@/components/landing/Footer';
@@ -25,6 +26,7 @@ const Index = () => {
 
     'website-builder',
     'testimonials',
+    'blog',
     'faq'
   ];
 
@@ -235,7 +237,9 @@ const Index = () => {
         <section id="testimonials" className="scroll-mt-32">
           <Testimonials />
         </section>
-
+        <section id="blog" className="scroll-mt-32">
+          <BlogSection />
+        </section>
         <section id="faq" className="scroll-mt-32">
           <FAQ />
         </section>

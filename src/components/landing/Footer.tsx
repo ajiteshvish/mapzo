@@ -42,8 +42,9 @@ const footerSections = {
       { label: 'Home', href: '/' },
       { label: 'About', href: '/about' },
       { label: 'Products', href: '/products' },
-      { label: 'Fetures', href: '/#how-it-works' },
+      { label: 'Features', href: '/#how-it-works' },
       { label: 'Pricing', href: '/pricing' },
+      { label: 'Blog', href: '/blog' },
     ]
   },
   features: {

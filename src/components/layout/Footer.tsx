@@ -107,7 +107,7 @@ export default function Footer() {
         <div>
           <h4 className="text-[12px] font-[800] uppercase tracking-wider text-[#1a1a1a] mb-6">Resources</h4>
           <ul className="space-y-2 text-[14px]">
-            <li><Link to="#" className="text-[#4b5563] hover:text-[#4e54e1] font-[500]">Blog</Link></li>
+            <li><Link to="/blog" className="text-[#4b5563] hover:text-[#4e54e1] font-[500]">Blog</Link></li>
             <li><Link to="#" className="text-[#4b5563] hover:text-[#4e54e1] font-[500]">Local SEO Course</Link></li>
             <li><Link to="#" className="text-[#4b5563] hover:text-[#4e54e1] font-[500]">Success stories</Link></li>
             <li><Link to="#" className="text-[#4b5563] hover:text-[#4e54e1] font-[500]">Marketing Dictionary</Link></li>

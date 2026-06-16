@@ -73,7 +73,7 @@ const navItems = [
         items: [
           { icon: MessageSquare, label: 'Contact Us', description: 'Send us an email, so we can support you and answer your questions', href: '#contact' },
           { icon: BookOpen, label: 'Knowledge Base', description: 'Read detailed guides about Mapzo AI and how it works', href: '#knowledge' },
-          { icon: FileText, label: 'Blog', description: 'Find strategies for local marketing and SEO for businesses in Google', href: '#blog' }
+          { icon: FileText, label: 'Blog', description: 'Find strategies for local marketing and SEO for businesses in Google', href: '/blog' }
         ]
       }
     ],
@@ -203,6 +203,15 @@ export function Header() {
                 Features
               </a>
               <Link
+                to="/blog"
+                className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Blog
+              </Link>
+              <Link
                 to="/pricing"
                 className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
                 onClick={() => {
@@ -291,6 +300,16 @@ export function Header() {
                   >
                     Features
                   </a>
+                  <Link
+                    to="/blog"
+                    className="flex items-center justify-between text-muted-foreground hover:text-soft-blue transition-colors duration-200 text-base font-medium py-3"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Blog
+                  </Link>
                   <Link
                     to="/pricing"
                     className="flex items-center justify-between text-muted-foreground hover:text-soft-blue transition-colors duration-200 text-base font-medium py-3"

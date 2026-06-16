@@ -12,6 +12,8 @@ import AboutUs from "@/pages/AboutUs";
 import BookDemo from "@/pages/BookDemo";
 import ProductsPage from "@/pages/ProductsPage";
 import PricingPage from "@/pages/PricingPage";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import { ScrollToHash } from "@/components/ui/scroll-to-hash";
 
 const queryClient = new QueryClient();
@@ -31,6 +33,8 @@ const App = () => (
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/book-demo" element={<BookDemo />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
